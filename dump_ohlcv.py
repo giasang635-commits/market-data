@@ -1,0 +1,291 @@
+#!/usr/bin/env python3
+"""
+OHLCV / funding dumper for the backtest lab. READ-ONLY to exchanges.
+
+- Bybit linear perps  -> via Squid proxy chain (Second primary, First fallback)
+- Binance spot        -> direct via data-api.binance.vision public mirror
+- Timeframes: 1h / 4h / 1d, full history via `since` pagination, incremental append.
+
+Layout:
+  data/{exchange}/{SYMBOL}_{tf}.parquet   cols: ts(UTC ms int64), open, high, low, close, volume (float64)
+  funding/{exchange}/{SYMBOL}.parquet     cols: ts(UTC ms int64), rate(float64)   [perp only]
+  meta/{exchange}_markets.json            ccxt load_markets() dump
+  manifest.json                           files, ranges, updated_at
+
+Symbol naming:
+  Bybit linear perp  BTC/USDT:USDT -> BTC-USDT-PERP
+  Binance spot       BTC/USDT      -> BTC-USDT
+"""
+import os
+import sys
+import json
+import time
+import argparse
+from datetime import datetime, timezone
+
+import ccxt
+import pandas as pd
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(BASE, "data")
+FUND = os.path.join(BASE, "funding")
+META = os.path.join(BASE, "meta")
+MANIFEST = os.path.join(BASE, "manifest.json")
+
+# Squid proxy chain of the Kit bot (Second/Berlin primary, First/France fallback)
+PROXIES = ["http://31.70.81.103:3128", "http://46.8.224.186:3128"]
+
+TF_MS = {"1h": 3_600_000, "4h": 14_400_000, "1d": 86_400_000}
+OHLCV_LIMIT = 1000
+FUNDING_LIMIT = 200
+MAX_RETRY = 4
+
+
+def log(*a):
+    print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}]", *a, flush=True)
+
+
+def now_ms():
+    return int(time.time() * 1000)
+
+
+# --------------------------------------------------------------------------- #
+# exchange factory
+# --------------------------------------------------------------------------- #
+def make_exchange(name):
+    if name == "bybit":
+        ex = ccxt.bybit({"enableRateLimit": True, "options": {"defaultType": "linear"}})
+        ex.httpsProxy = PROXIES[0]
+        ex._uses_proxy = True
+    elif name == "binance":
+        ex = ccxt.binance({
+            "enableRateLimit": True,
+            "options": {"defaultType": "spot", "fetchMarkets": ["spot"]},
+        })
+        # spot-only load_markets avoids fapi/dapi/eapi (451); route public /api/ to vision mirror
+        for k, v in list(ex.urls["api"].items()):
+            if isinstance(v, str):
+                ex.urls["api"][k] = v.replace(
+                    "https://api.binance.com/api/", "https://data-api.binance.vision/api/"
+                )
+        ex._uses_proxy = False
+    else:
+        raise ValueError(f"unknown exchange {name}")
+    return ex
+
+
+def call(ex, fn, *args, **kwargs):
+    """Retry wrapper. For proxied exchanges cycles the proxy chain on network errors."""
+    last = None
+    for attempt in range(MAX_RETRY):
+        try:
+            return fn(*args, **kwargs)
+        except (ccxt.NetworkError, ccxt.ExchangeNotAvailable, ccxt.RequestTimeout,
+                ccxt.DDoSProtection) as e:
+            last = e
+            if getattr(ex, "_uses_proxy", False):
+                nxt = PROXIES[(attempt + 1) % len(PROXIES)]
+                ex.httpsProxy = nxt
+                log(f"    net err ({type(e).__name__}); switch proxy -> {nxt}")
+            time.sleep(1.5 * (attempt + 1))
+    raise last
+
+
+# --------------------------------------------------------------------------- #
+# symbol helpers
+# --------------------------------------------------------------------------- #
+def norm_symbol(name, market):
+    base, quote = market["base"], market["quote"]
+    if name == "bybit" and market.get("swap") and market.get("linear"):
+        return f"{base}-{quote}-PERP"
+    return f"{base}-{quote}"
+
+
+def eligible(name, m):
+    if not m.get("active"):
+        return False
+    if m.get("quote") != "USDT":
+        return False
+    if name == "bybit":
+        return bool(m.get("swap") and m.get("linear"))
+    return bool(m.get("spot"))
+
+
+def top_symbols(ex, name, n):
+    markets = ex.load_markets()
+    tickers = call(ex, ex.fetch_tickers)
+    rows = []
+    for sym, m in markets.items():
+        if not eligible(name, m):
+            continue
+        t = tickers.get(sym)
+        qv = (t or {}).get("quoteVolume") or 0
+        rows.append((sym, qv))
+    rows.sort(key=lambda x: -x[1])
+    return [s for s, _ in rows[:n]]
+
+
+# --------------------------------------------------------------------------- #
+# fetch
+# --------------------------------------------------------------------------- #
+def fetch_ohlcv(ex, symbol, tf, since, until):
+    out, cur, step = [], since, TF_MS[tf]
+    while cur < until:
+        batch = call(ex, ex.fetch_ohlcv, symbol, tf, cur, OHLCV_LIMIT)
+        if not batch:
+            break
+        out.extend(batch)
+        last = batch[-1][0]
+        if len(batch) < OHLCV_LIMIT:
+            break
+        cur = last + step
+    return out
+
+
+def fetch_funding(ex, symbol, since):
+    out, cur = [], since
+    while True:
+        batch = call(ex, ex.fetch_funding_rate_history, symbol, cur, FUNDING_LIMIT)
+        if not batch:
+            break
+        for r in batch:
+            out.append([int(r["timestamp"]), float(r["fundingRate"])])
+        if len(batch) < FUNDING_LIMIT:
+            break
+        cur = int(batch[-1]["timestamp"]) + 1
+    return out
+
+
+# --------------------------------------------------------------------------- #
+# parquet io
+# --------------------------------------------------------------------------- #
+def write_ohlcv(path, rows):
+    df = pd.DataFrame(rows, columns=["ts", "open", "high", "low", "close", "volume"])
+    df = df.astype({"ts": "int64", "open": "float64", "high": "float64",
+                    "low": "float64", "close": "float64", "volume": "float64"})
+    if os.path.exists(path):
+        df = pd.concat([pd.read_parquet(path), df], ignore_index=True)
+    df = df.drop_duplicates("ts").sort_values("ts").reset_index(drop=True)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    df.to_parquet(path, index=False)
+    return df
+
+
+def write_funding(path, rows):
+    df = pd.DataFrame(rows, columns=["ts", "rate"])
+    if df.empty:
+        return df
+    df = df.astype({"ts": "int64", "rate": "float64"})
+    if os.path.exists(path):
+        df = pd.concat([pd.read_parquet(path), df], ignore_index=True)
+    df = df.drop_duplicates("ts").sort_values("ts").reset_index(drop=True)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    df.to_parquet(path, index=False)
+    return df
+
+
+# --------------------------------------------------------------------------- #
+# manifest
+# --------------------------------------------------------------------------- #
+def load_manifest():
+    if os.path.exists(MANIFEST):
+        with open(MANIFEST) as f:
+            return json.load(f)
+    return {"files": {}}
+
+
+def save_manifest(man):
+    man["updated_at"] = datetime.now(timezone.utc).isoformat()
+    with open(MANIFEST, "w") as f:
+        json.dump(man, f, indent=2)
+
+
+def manifest_entry(df, kind):
+    if df.empty:
+        return {"kind": kind, "rows": 0, "first_ts": None, "last_ts": None}
+    return {
+        "kind": kind,
+        "rows": int(len(df)),
+        "first_ts": int(df["ts"].iloc[0]),
+        "last_ts": int(df["ts"].iloc[-1]),
+        "first_utc": datetime.fromtimestamp(df["ts"].iloc[0] / 1000, timezone.utc).isoformat(),
+        "last_utc": datetime.fromtimestamp(df["ts"].iloc[-1] / 1000, timezone.utc).isoformat(),
+    }
+
+
+# --------------------------------------------------------------------------- #
+# main
+# --------------------------------------------------------------------------- #
+def run(exchanges, timeframes, days, top, smoke):
+    man = load_manifest()
+    until = now_ms()
+    since = until - days * 86_400_000 if days else 0
+
+    for name in exchanges:
+        ex = make_exchange(name)
+        log(f"=== {name} : load_markets ===")
+        markets = ex.load_markets()
+
+        # dump markets meta
+        os.makedirs(META, exist_ok=True)
+        meta_path = os.path.join(META, f"{name}_markets.json")
+        with open(meta_path, "w") as f:
+            json.dump(markets, f, default=str)
+        log(f"  meta -> {meta_path} ({len(markets)} markets)")
+
+        if smoke:
+            picks = top_symbols(ex, name, 200)
+            btc = next((s for s in picks if markets[s]["base"] == "BTC"), None)
+            eth = next((s for s in picks if markets[s]["base"] == "ETH"), None)
+            alt = next((s for s in picks if markets[s]["base"] not in ("BTC", "ETH")), None)
+            syms = [s for s in (btc, eth, alt) if s]
+        else:
+            syms = top_symbols(ex, name, top)
+        log(f"  symbols ({len(syms)}): {syms}")
+
+        for sym in syms:
+            m = markets[sym]
+            nsym = norm_symbol(name, m)
+            for tf in timeframes:
+                path = os.path.join(DATA, name, f"{nsym}_{tf}.parquet")
+                rel = os.path.relpath(path, BASE)
+                rows = fetch_ohlcv(ex, sym, tf, since, until)
+                df = write_ohlcv(path, rows)
+                man["files"][rel] = manifest_entry(df, "ohlcv")
+                log(f"  ohlcv {nsym} {tf}: +{len(rows)} -> {len(df)} rows")
+
+            # funding for perps
+            if m.get("swap"):
+                fpath = os.path.join(FUND, name, f"{nsym}.parquet")
+                frel = os.path.relpath(fpath, BASE)
+                try:
+                    frows = fetch_funding(ex, sym, since)
+                    fdf = write_funding(fpath, frows)
+                    if not fdf.empty:
+                        man["files"][frel] = manifest_entry(fdf, "funding")
+                        log(f"  funding {nsym}: +{len(frows)} -> {len(fdf)} rows")
+                except Exception as e:
+                    log(f"  funding {nsym}: SKIP ({type(e).__name__}: {e})")
+
+        save_manifest(man)
+    log("done.")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--exchanges", default="bybit,binance")
+    ap.add_argument("--timeframes", default="1h,4h,1d")
+    ap.add_argument("--days", type=int, default=0, help="0 = full history")
+    ap.add_argument("--top", type=int, default=50)
+    ap.add_argument("--smoke", action="store_true",
+                    help="BTC, ETH + 1 alt, 1h, 30d")
+    a = ap.parse_args()
+
+    if a.smoke:
+        run(a.exchanges.split(","), ["1h"], 30, a.top, smoke=True)
+    else:
+        run(a.exchanges.split(","), a.timeframes.split(","), a.days, a.top, smoke=False)
+
+
+if __name__ == "__main__":
+    main()

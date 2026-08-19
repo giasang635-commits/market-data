@@ -1,0 +1,77 @@
+{
+  "files": {
+    "data/bybit/BTC-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    },
+    "funding/bybit/BTC-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 90,
+      "first_ts": 1784563200000,
+      "last_ts": 1787126400000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T08:00:00+00:00"
+    },
+    "data/bybit/ETH-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    },
+    "funding/bybit/ETH-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 90,
+      "first_ts": 1784563200000,
+      "last_ts": 1787126400000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T08:00:00+00:00"
+    },
+    "data/bybit/SOL-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    },
+    "funding/bybit/SOL-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 90,
+      "first_ts": 1784563200000,
+      "last_ts": 1787126400000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T08:00:00+00:00"
+    },
+    "data/binance/BTC-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    },
+    "data/binance/ETH-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    },
+    "data/binance/USDC-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 720,
+      "first_ts": 1784563200000,
+      "last_ts": 1787151600000,
+      "first_utc": "2026-07-20T16:00:00+00:00",
+      "last_utc": "2026-08-19T15:00:00+00:00"
+    }
+  },
+  "updated_at": "2026-08-19T15:15:53.656737+00:00"
+}
