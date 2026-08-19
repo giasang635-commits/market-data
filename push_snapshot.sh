@@ -1,22 +1,34 @@
 #!/usr/bin/env bash
-# Snapshot push: repo is a SNAPSHOT, not an archive.
-# Pushes current tree as a single orphan commit with force -> remote history stays flat (1 commit).
-# Clone side uses: git clone --depth 1 <remote>
+# Snapshot push: the REMOTE repo is a SNAPSHOT (single commit), not an archive.
+# Local working branch keeps full history; remote gets one orphan commit (force).
+# Clone side: git clone --depth 1 https://github.com/giasang635-commits/market-data
 #
-# Usage:
-#   git remote add origin <REMOTE_URL>   # once, token in URL or via credential helper (NOT in chat)
-#   ./push_snapshot.sh [branch]          # default branch: main
+# AUTH (do ONE of these on the server; never paste the token into chat):
+#   git remote set-url origin https://<TOKEN>@github.com/giasang635-commits/market-data
+#   # or:
+#   printf 'https://<TOKEN>@github.com\n' > ~/.git-credentials && git config --global credential.helper store
+#
+# Usage:  ./push_snapshot.sh [remote_branch]     # default remote branch: main
 set -euo pipefail
 cd "$(dirname "$0")"
 
-BR="${1:-main}"
+REMOTE_BRANCH="${1:-main}"
+SRC_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 TS="$(date -u +%FT%TZ)"
 
-# fresh orphan branch = single commit, no history growth
-git checkout --orphan _snapshot_tmp
+# 1) persist any new/updated data on the local working branch (keeps history)
+git add -A
+git commit -q -m "update ${TS}" || true
+
+# 2) build a fresh single-commit orphan and force-push it as the remote snapshot
+git branch -D _snapshot 2>/dev/null || true
+git checkout -q --orphan _snapshot
 git add -A
 git commit -q -m "data snapshot ${TS}"
-git branch -M _snapshot_tmp "${BR}"
-git push -f origin "${BR}"
+git push -f origin "_snapshot:${REMOTE_BRANCH}"
 
-echo "pushed snapshot ${TS} -> origin/${BR} (single commit, --depth 1 friendly)"
+# 3) return to the working branch, drop the temp orphan
+git checkout -qf "${SRC_BRANCH}"
+git branch -D _snapshot
+
+echo "pushed snapshot ${TS} -> origin/${REMOTE_BRANCH} (single commit, --depth 1 friendly)"
