@@ -1,0 +1,7 @@
+# Forced-include symbols, added on top of the top-50 selection each run.
+# Format: exchange:SPEC   (SPEC = ccxt symbol | market id | base ticker)
+# Examples:
+#   bybit:TON/USDT:USDT
+#   bybit:TONUSDT
+#   binance:TON
+# Lines starting with # and blank lines are ignored.

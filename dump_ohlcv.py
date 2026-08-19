@@ -48,10 +48,25 @@ MAX_RETRY = 4
 STABLE_BASES = {
     "USDC", "FDUSD", "TUSD", "BUSD", "DAI", "USDE", "USD1", "PYUSD", "EURC",
     "USDP", "FRAX", "USDT", "USDD", "GUSD", "LUSD", "SUSD", "EURI", "EUR",
-    "USTC", "UST", "XUSD", "AEUR", "USDR",
+    "USTC", "UST", "XUSD", "AEUR", "USDR", "RLUSD",
 }
 # leveraged tokens: ...UP / ...DOWN / ...BULL / ...BEAR / ...3L / ...3S etc.
 LEV_RE = re.compile(r"(UP|DOWN|BULL|BEAR)$|[2-5][LS]$")
+
+# Bybit: info.symbolType of non-crypto instruments (tokenized stocks / ETFs / commodities)
+NONCRYPTO_SYMBOLTYPES = {"stock", "ETF", "commodity"}
+
+# Binance: tokenized-stock bases (all end in 'B', ticker cross-checked vs Bybit stock/ETF/commodity).
+# Binance spot has no clean symbolType field, so this static (hand-reviewed) blocklist is used.
+BINANCE_STOCK_BASES = {
+    "AAOIB", "AAPLB", "ALABB", "AMATB", "AMZNB", "ARMB", "ASMLB", "ASTSB", "AVGOB",
+    "AXTIB", "BABAB", "BEB", "BMNRB", "CBRSB", "COHRB", "COINB", "CRCLB", "CRDOB",
+    "CRWVB", "DELLB", "DRAMB", "EWYB", "FLNCB", "GLWB", "GOOGLB", "GSB", "HOODB",
+    "IBMB", "INTCB", "INTWB", "IRENB", "KORUB", "LITEB", "METAB", "MRVLB", "MSFTB",
+    "MSTRB", "MUB", "MUUB", "MVLLB", "NBISB", "NFLXB", "NVDAB", "ORCLB", "PLTRB",
+    "PYPLB", "QCOMB", "QQQB", "RKLBB", "SKHYB", "SMCIB", "SMHB", "SNDKB", "SNXXB",
+    "SOXLB", "SOXSB", "SPCXB", "SPYB", "TQQQB", "TSLAB", "TSMB", "USARB", "WDCB",
+}
 
 
 def log(*a):
@@ -132,8 +147,55 @@ def eligible(name, m):
     if base in STABLE_BASES or LEV_RE.search(base):
         return False
     if name == "bybit":
+        st = (m.get("info") or {}).get("symbolType")
+        if st in NONCRYPTO_SYMBOLTYPES:
+            return False
         return bool(m.get("swap") and m.get("linear"))
+    # binance spot
+    if base in BINANCE_STOCK_BASES:
+        return False
     return bool(m.get("spot"))
+
+
+def resolve_symbol(name, markets, spec):
+    """Resolve an extra-symbol spec to a ccxt unified symbol (type-aware).
+    Bybit -> linear swap, Binance -> spot. Accepts ccxt symbol | market id | base."""
+    def right_type(m):
+        if name == "bybit":
+            return bool(m.get("swap") and m.get("linear"))
+        return bool(m.get("spot"))
+
+    if spec in markets and right_type(markets[spec]):
+        return spec
+    cands = []
+    for s, m in markets.items():
+        if not (m.get("quote") == "USDT" and m.get("active") and right_type(m)):
+            continue
+        if s == spec or m.get("id") == spec or m.get("base") == spec:
+            cands.append(s)
+    return cands[0] if cands else None
+
+
+def read_extra(name, markets):
+    """extra_symbols.txt lines 'exchange:SPEC' -> forced-include ccxt symbols for this exchange."""
+    path = os.path.join(BASE, "extra_symbols.txt")
+    out = []
+    if not os.path.exists(path):
+        return out
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or ":" not in line:
+                continue
+            exn, spec = line.split(":", 1)
+            if exn.strip() != name:
+                continue
+            sym = resolve_symbol(name, markets, spec.strip())
+            if sym:
+                out.append(sym)
+            else:
+                log(f"  extra: UNRESOLVED '{line}'")
+    return out
 
 
 def top_symbols(ex, name, n):
@@ -297,6 +359,10 @@ def run(exchanges, timeframes, days, top, smoke=False, only_meta=False):
             syms = [s for s in (btc, eth, alt) if s]
         else:
             syms = top_symbols(ex, name, top)
+        # forced extra symbols (extra_symbols.txt), deduped, appended
+        for s in read_extra(name, markets):
+            if s not in syms:
+                syms.append(s)
         nsyms = [norm_symbol(name, markets[s]) for s in syms]
         man["selected_symbols"][name] = nsyms
         log(f"  selected ({len(syms)}): {nsyms}")
