@@ -1,97 +1,28 @@
 {
   "files": {
-    "data/bybit/BTC-USDT-PERP_1h.parquet": {
+    "data/bybit/BTC-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
+      "rows": 2339,
+      "first_ts": 1585094400000,
+      "last_ts": 1787097600000,
+      "first_utc": "2020-03-25T00:00:00+00:00",
+      "last_utc": "2026-08-19T00:00:00+00:00"
     },
     "funding/bybit/BTC-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 90,
-      "first_ts": 1784563200000,
+      "rows": 7014,
+      "first_ts": 1585152000000,
       "last_ts": 1787126400000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
+      "first_utc": "2020-03-25T16:00:00+00:00",
       "last_utc": "2026-08-19T08:00:00+00:00"
-    },
-    "data/bybit/ETH-USDT-PERP_1h.parquet": {
-      "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
-    },
-    "funding/bybit/ETH-USDT-PERP.parquet": {
-      "kind": "funding",
-      "rows": 90,
-      "first_ts": 1784563200000,
-      "last_ts": 1787126400000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T08:00:00+00:00"
-    },
-    "data/bybit/SOL-USDT-PERP_1h.parquet": {
-      "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
-    },
-    "funding/bybit/SOL-USDT-PERP.parquet": {
-      "kind": "funding",
-      "rows": 90,
-      "first_ts": 1784563200000,
-      "last_ts": 1787126400000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T08:00:00+00:00"
-    },
-    "data/binance/BTC-USDT_1h.parquet": {
-      "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
-    },
-    "data/binance/ETH-USDT_1h.parquet": {
-      "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
-    },
-    "data/binance/USDC-USDT_1h.parquet": {
-      "kind": "ohlcv",
-      "rows": 720,
-      "first_ts": 1784563200000,
-      "last_ts": 1787151600000,
-      "first_utc": "2026-07-20T16:00:00+00:00",
-      "last_utc": "2026-08-19T15:00:00+00:00"
     }
   },
-  "updated_at": "2026-08-19T15:52:28.410278+00:00",
   "selected_symbols": {
     "bybit": [
-      "BTC-USDT-PERP",
-      "ETH-USDT-PERP",
-      "SOL-USDT-PERP",
-      "XRP-USDT-PERP",
-      "HYPE-USDT-PERP",
-      "ATOM-USDT-PERP"
-    ],
-    "binance": [
-      "BTC-USDT",
-      "ETH-USDT",
-      "SOL-USDT",
-      "ALLO-USDT",
-      "XRP-USDT",
-      "ATOM-USDT"
+      "BTC-USDT-PERP"
     ]
   },
-  "run_started_at": "2026-08-19T15:52:12.440318+00:00",
-  "run_finished_at": "2026-08-19T15:52:28.410233+00:00"
+  "run_started_at": "2026-08-19T15:55:50.748594+00:00",
+  "updated_at": "2026-08-19T15:56:13.622939+00:00",
+  "run_finished_at": "2026-08-19T15:56:13.622912+00:00"
 }

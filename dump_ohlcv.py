@@ -43,6 +43,8 @@ TF_MS = {"1h": 3_600_000, "4h": 14_400_000, "1d": 86_400_000}
 OHLCV_LIMIT = 1000
 FUNDING_LIMIT = 200
 MAX_RETRY = 4
+# full-history floor (2017-01-01). since=0 makes Bybit return only the latest page, not history.
+FULL_SINCE = 1_483_228_800_000
 
 # base assets to exclude (stablecoins / pegged)
 STABLE_BASES = {
@@ -250,17 +252,21 @@ def fetch_ohlcv(ex, symbol, tf, since, until):
     return out
 
 
-def fetch_funding(ex, symbol, since):
-    out, cur = [], since
+def fetch_funding(ex, symbol, floor_ms):
+    """Backward pagination via `until` (Bybit keeps funding history in a bounded window;
+    a far-past `since` returns empty, so we walk back from now down to floor_ms)."""
+    out, end = [], now_ms()
     while True:
-        batch = call(ex, ex.fetch_funding_rate_history, symbol, cur, FUNDING_LIMIT)
+        batch = call(ex, ex.fetch_funding_rate_history, symbol, None, FUNDING_LIMIT, {"until": end})
         if not batch:
             break
-        for r in batch:
-            out.append([int(r["timestamp"]), float(r["fundingRate"])])
-        if len(batch) < FUNDING_LIMIT:
+        batch = sorted(batch, key=lambda r: int(r["timestamp"]))
+        out = [[int(r["timestamp"]), float(r["fundingRate"])]
+               for r in batch if int(r["timestamp"]) >= floor_ms] + out
+        first = int(batch[0]["timestamp"])
+        if first <= floor_ms or len(batch) < FUNDING_LIMIT:
             break
-        cur = int(batch[-1]["timestamp"]) + 1
+        end = first - 1
     return out
 
 
@@ -343,7 +349,7 @@ def run(exchanges, timeframes, days, top, smoke=False, only_meta=False):
     man.setdefault("files", {})
     man["run_started_at"] = datetime.now(timezone.utc).isoformat()
     until = now_ms()
-    default_since = (until - days * 86_400_000) if days else 0
+    default_since = (until - days * 86_400_000) if days else FULL_SINCE
 
     for name in exchanges:
         ex = make_exchange(name)
