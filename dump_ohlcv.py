@@ -340,6 +340,36 @@ def manifest_entry(df, kind):
     }
 
 
+STALE_MS = 3 * 86_400_000  # symbol dropped from top-50 and not updated >3 days -> stale
+
+
+def parse_rel(rel):
+    """data/bybit/BTC-USDT-PERP_1h.parquet -> (bybit, BTC-USDT-PERP); funding/... -> (ex, nsym)."""
+    parts = rel.split(os.sep)
+    if len(parts) < 3:
+        return None, None
+    exch, fname = parts[1], parts[-1]
+    stem = fname[:-len(".parquet")] if fname.endswith(".parquet") else fname
+    nsym = stem.rsplit("_", 1)[0] if parts[0] == "data" else stem
+    return exch, nsym
+
+
+def mark_stale(man):
+    """Flag files whose symbol left the current top-50 and hasn't updated in >3 days.
+    Files are kept (not deleted); only the manifest carries stale=true."""
+    now = now_ms()
+    for rel, entry in man["files"].items():
+        exch, nsym = parse_rel(rel)
+        selected = man.get("selected_symbols", {}).get(exch, [])
+        last = entry.get("last_ts")
+        if nsym in selected:
+            entry.pop("stale", None)
+        elif last and (now - last) > STALE_MS:
+            entry["stale"] = True
+        else:
+            entry.pop("stale", None)
+
+
 # --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
@@ -416,6 +446,7 @@ def run(exchanges, timeframes, days, top, smoke=False, only_meta=False):
 
             save_manifest(man)  # checkpoint per symbol
 
+    mark_stale(man)
     man["run_finished_at"] = datetime.now(timezone.utc).isoformat()
     save_manifest(man)
     log("done.")

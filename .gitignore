@@ -6,3 +6,7 @@ meta/*.full.json
 # run logs
 nohup.log
 dump_full.out
+cron.log
+full_run_start.txt
+# cron lock
+.cron.lock
