@@ -20,6 +20,8 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
+import bisect
+
 from dump_ohlcv import make_exchange, call, top_symbols, norm_symbol, now_ms, log
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -51,8 +53,10 @@ def fetch_funding(ex, symbol, floor_ms):
 
 def fetch_mark_4h(ex, market_id, floor_ms):
     """Bybit v5 mark-price-kline (interval=240). Backward pagination via `end`.
-    -> dict ts_ms -> open price (mark price at that 4h boundary)."""
-    marks, end = {}, now_ms()
+    -> dict ts_ms -> open price (mark price at that 4h boundary).
+    Stops only when the endpoint runs out (oldest stops decreasing) or floor reached,
+    so a short mid-history page never aborts pagination early."""
+    marks, end, prev_oldest = {}, now_ms(), None
     while True:
         r = call(ex, ex.publicGetV5MarketMarkPriceKline, {
             "category": "linear", "symbol": market_id,
@@ -64,25 +68,55 @@ def fetch_mark_4h(ex, market_id, floor_ms):
         for row in lst:  # [start, open, high, low, close], newest first
             marks[int(row[0])] = float(row[1])
         oldest = min(int(row[0]) for row in lst)
-        if oldest <= floor_ms or len(lst) < MARK_LIMIT:
+        if oldest <= floor_ms or oldest == prev_oldest:
             break
+        prev_oldest = oldest
         end = oldest - 1
     return marks
 
 
-def join_mark(frows, marks):
-    """Attach mark price to each funding row. Exact 4h-boundary match; else forward-fill
-    from the most recent earlier mark candle. Guarantees no NaN."""
-    mark_ts = sorted(marks.keys())
-    out, mi, last = [], 0, None
-    import bisect
+def fetch_binance_close_4h(base, since, until):
+    """Real market price to backfill the pre-mark-kline gap (Bybit keeps funding history
+    deeper than mark-price-kline for some symbols). Binance spot <base>/USDT 4h close.
+    -> dict ts_ms -> close. Empty {} if the pair is unavailable."""
+    try:
+        bn = make_exchange("binance")
+        bn.load_markets()
+        sym = f"{base}/USDT"
+        if sym not in bn.markets:
+            return {}
+        out, cur, step = {}, since, MARK_STEP_MS
+        while cur < until:
+            batch = call(bn, bn.fetch_ohlcv, sym, "4h", cur, 1000)
+            if not batch:
+                break
+            for row in batch:
+                out[int(row[0])] = float(row[4])
+            last = batch[-1][0]
+            if len(batch) < 1000:
+                break
+            cur = last + step
+        return out
+    except Exception as e:
+        log(f"    binance backfill {base}: {type(e).__name__}: {e}")
+        return {}
+
+
+def join_mark(frows, price_map):
+    """Attach a price to each funding row from a merged price map (Bybit mark, authoritative,
+    overlaid on Binance-close gap backfill). Exact 4h-boundary match; else nearest earlier,
+    else nearest later. Guarantees no NaN as long as price_map is non-empty."""
+    ts_sorted = sorted(price_map.keys())
+    out = []
     for ts, rate in frows:
-        if ts in marks:
-            mp = marks[ts]
+        if ts in price_map:
+            mp = price_map[ts]
         else:
-            j = bisect.bisect_right(mark_ts, ts) - 1
-            mp = marks[mark_ts[j]] if j >= 0 else (last if last is not None else marks[mark_ts[0]])
-        last = mp
+            j = bisect.bisect_right(ts_sorted, ts) - 1
+            if j >= 0:
+                mp = price_map[ts_sorted[j]]
+            else:
+                mp = price_map[ts_sorted[0]]
         out.append([ts, rate, mp])
     return out
 
@@ -120,7 +154,18 @@ def main():
             log(f"  no funding rows, skip")
             continue
         marks = fetch_mark_4h(ex, mid, frows[0][0])
-        rows = join_mark(frows, marks)
+        # backfill the pre-mark-kline gap (funding deeper than mark history) with Binance close
+        earliest_mark = min(marks) if marks else None
+        price_map = {}
+        if earliest_mark is None or frows[0][0] < earliest_mark:
+            gap_until = earliest_mark if earliest_mark is not None else now_ms()
+            bn = fetch_binance_close_4h(m["base"], frows[0][0], gap_until)
+            if bn:
+                price_map.update(bn)
+                log(f"  binance backfill {m['base']}: {len(bn)} pts "
+                    f"< {iso(gap_until)[:10] if earliest_mark else 'now'}")
+        price_map.update(marks)  # Bybit mark is authoritative where present
+        rows = join_mark(frows, price_map)
         path = os.path.join(OUT_DIR, f"{nsym}_funding.parquet")
         df = write_parquet(path, nsym, rows)
 
