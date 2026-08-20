@@ -2,36 +2,69 @@
 """
 Funding-rate dumper for carry backtests (Bybit linear perps). READ-ONLY to exchange.
 
-Symbols: BTC-USDT-PERP, ETH-USDT-PERP + top-10 Bybit linear by 24h quoteVolume (deduped).
-Range  : 2021-01-01 .. now, 8h funding rate.
+Symbols: the whole backtest universe = every Bybit linear perp that already has an OHLCV
+         parquet in data/bybit/ (derived from *_1h.parquet stems). 59 perps as of dump.
+Range  : from listing (walks back until the funding endpoint runs out; floor 2020-01-01)
+         .. now. Funding interval per symbol (8h / 4h / 1h) is taken from the market's
+         info.fundingInterval (minutes) and recorded in meta/bybit_funding_meta.json.
 Output : data/bybit/funding/<symbol>_funding.parquet
          cols: ts_ms:int64 (UTC), symbol:str, funding_rate:float (fraction/interval),
                mark_price:float
 Contract: no duplicate ts, sorted by ts, no NaN.
 
 Funding history endpoint carries only (ts, fundingRate) -> mark_price is joined from
-Bybit v5 mark-price-kline (4h). Funding ts are multiples of 4h, so the 4h candle whose
-OPEN == funding ts gives the mark price at settlement; missing points forward-fill.
+Bybit v5 mark-price-kline (4h). Funding ts are multiples of the funding interval; the
+nearest 4h mark boundary at/earlier than each funding ts gives the mark price, with a
+Binance-close backfill for the pre-mark-kline gap.
+
+ANNUALIZATION NOTE: proof reports BOTH `ann_x3x365` (naive mean*3*365, assumes 8h) and
+`ann_by_interval` (mean * (1440/interval_min) * 365, the correct factor). For 4h perps
+the naive x3x365 UNDER-counts by 2x; use ann_by_interval.
 """
 import os
+import re
 import json
 import time
+import glob
 from datetime import datetime, timezone
 
 import pandas as pd
 
 import bisect
 
-from dump_ohlcv import make_exchange, call, top_symbols, norm_symbol, now_ms, log
+from dump_ohlcv import make_exchange, call, norm_symbol, now_ms, log
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(BASE, "data", "bybit", "funding")
+META_DIR = os.path.join(BASE, "meta")
 
-FLOOR_MS = 1_609_459_200_000          # 2021-01-01T00:00:00Z
+FLOOR_MS = 1_577_836_800_000          # 2020-01-01T00:00:00Z (linear perps began 2021; safe floor)
 FUNDING_LIMIT = 200
 MARK_LIMIT = 1000
 MARK_STEP_MS = 4 * 3_600_000          # 4h mark klines
-CORE = ["BTC/USDT:USDT", "ETH/USDT:USDT"]
+
+
+def build_universe(markets):
+    """Universe = every Bybit linear perp that already has an OHLCV parquet in data/bybit/.
+    Returns [(ccxt_symbol, nsym, funding_interval_min), ...] sorted by nsym."""
+    rev = {}
+    for s, m in markets.items():
+        if m.get("swap") and m.get("linear") and m.get("quote") == "USDT":
+            rev[norm_symbol("bybit", m)] = s
+    nsyms = sorted({
+        re.sub(r"_1h$", "", os.path.basename(p)[:-len(".parquet")])
+        for p in glob.glob(os.path.join(BASE, "data", "bybit", "*_1h.parquet"))
+    })
+    out = []
+    for nsym in nsyms:
+        sym = rev.get(nsym)
+        if not sym:
+            log(f"  universe: UNRESOLVED {nsym} (no live linear market), skip")
+            continue
+        iv = (markets[sym].get("info") or {}).get("fundingInterval")
+        iv = int(iv) if iv is not None else None
+        out.append((sym, nsym, iv))
+    return out
 
 
 def fetch_funding(ex, symbol, floor_ms):
@@ -138,17 +171,17 @@ def iso(ms):
 
 def main():
     ex = make_exchange("bybit")
-    log("load_markets + top-10 by volume")
+    log("load_markets + build universe from data/bybit/*_1h.parquet")
     markets = ex.load_markets()
-    top = top_symbols(ex, "bybit", 10)
-    syms = list(CORE) + [s for s in top if s not in CORE]
+    universe = build_universe(markets)
+    log(f"universe: {len(universe)} perps")
 
     proofs = {}
-    for sym in syms:
+    meta = {}
+    for sym, nsym, iv_min in universe:
         m = markets[sym]
-        nsym = norm_symbol("bybit", m)
         mid = m["id"]
-        log(f"=== {nsym} ({mid}) ===")
+        log(f"=== {nsym} ({mid}) interval={iv_min}m ===")
         frows = fetch_funding(ex, sym, FLOOR_MS)
         if not frows:
             log(f"  no funding rows, skip")
@@ -165,6 +198,9 @@ def main():
                 log(f"  binance backfill {m['base']}: {len(bn)} pts "
                     f"< {iso(gap_until)[:10] if earliest_mark else 'now'}")
         price_map.update(marks)  # Bybit mark is authoritative where present
+        if not price_map:
+            log(f"  WARN no price source for {nsym}; mark_price would be NaN, skip")
+            continue
         rows = join_mark(frows, price_map)
         path = os.path.join(OUT_DIR, f"{nsym}_funding.parquet")
         df = write_parquet(path, nsym, rows)
@@ -173,20 +209,35 @@ def main():
         assert not df["ts_ms"].duplicated().any(), "dup ts"
         assert not df.isnull().values.any(), "NaN present"
 
-        ann = float(df["funding_rate"].mean() * 3 * 365)
+        mean = float(df["funding_rate"].mean())
+        ann_naive = mean * 3 * 365
+        per_day = (1440 / iv_min) if iv_min else 3
+        ann_iv = mean * per_day * 365
+        meta[nsym] = {
+            "funding_interval_min": iv_min,
+            "funding_interval_h": round(iv_min / 60, 3) if iv_min else None,
+            "periods_per_day": per_day,
+        }
         proofs[nsym] = {
             "rows": int(len(df)),
             "first_utc": iso(int(df["ts_ms"].iloc[0])),
             "last_utc": iso(int(df["ts_ms"].iloc[-1])),
-            "annualized_mean": round(ann, 6),
+            "funding_interval_min": iv_min,
+            "mean_rate": round(mean, 10),
+            "ann_x3x365": round(ann_naive, 6),
+            "ann_by_interval": round(ann_iv, 6),
             "head5": df.head(5).to_dict("records"),
         }
         log(f"  {nsym}: {len(df)} rows  {iso(int(df['ts_ms'].iloc[0]))} .. "
-            f"{iso(int(df['ts_ms'].iloc[-1]))}  ann={ann:.4%}")
+            f"{iso(int(df['ts_ms'].iloc[-1]))}  x3x365={ann_naive:.4%}  byIv={ann_iv:.4%}")
 
+    os.makedirs(META_DIR, exist_ok=True)
+    with open(os.path.join(META_DIR, "bybit_funding_meta.json"), "w") as f:
+        json.dump(meta, f, indent=2, default=str)
     with open(os.path.join(BASE, "funding_carry_proof.json"), "w") as f:
         json.dump(proofs, f, indent=2, default=str)
-    log("done. proof -> funding_carry_proof.json")
+    log(f"done. {len(proofs)} symbols. proof -> funding_carry_proof.json, "
+        f"meta -> meta/bybit_funding_meta.json")
 
 
 if __name__ == "__main__":
