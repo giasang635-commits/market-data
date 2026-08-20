@@ -213,23 +213,35 @@ def main():
         ann_naive = mean * 3 * 365
         per_day = (1440 / iv_min) if iv_min else 3
         ann_iv = mean * per_day * 365
+        # realized carry (interval-agnostic): total funding / elapsed years. Robust to symbols
+        # whose funding interval CHANGED over history (e.g. 1h at listing -> 4h later).
+        diffs_min = df["ts_ms"].diff().dropna() / 60_000.0
+        med_iv = float(diffs_min.median()) if len(diffs_min) else (iv_min or 0)
+        span_days = (int(df["ts_ms"].iloc[-1]) - int(df["ts_ms"].iloc[0])) / 86_400_000
+        span_years = span_days / 365.25 if span_days > 0 else None
+        ann_realized = float(df["funding_rate"].sum() / span_years) if span_years else None
         meta[nsym] = {
             "funding_interval_min": iv_min,
             "funding_interval_h": round(iv_min / 60, 3) if iv_min else None,
             "periods_per_day": per_day,
+            "median_interval_min": round(med_iv, 1),
+            "variable_interval": bool(iv_min and abs(med_iv - iv_min) > 1),
         }
         proofs[nsym] = {
             "rows": int(len(df)),
             "first_utc": iso(int(df["ts_ms"].iloc[0])),
             "last_utc": iso(int(df["ts_ms"].iloc[-1])),
             "funding_interval_min": iv_min,
+            "median_interval_min": round(med_iv, 1),
             "mean_rate": round(mean, 10),
             "ann_x3x365": round(ann_naive, 6),
             "ann_by_interval": round(ann_iv, 6),
+            "ann_realized": round(ann_realized, 6) if ann_realized is not None else None,
             "head5": df.head(5).to_dict("records"),
         }
         log(f"  {nsym}: {len(df)} rows  {iso(int(df['ts_ms'].iloc[0]))} .. "
-            f"{iso(int(df['ts_ms'].iloc[-1]))}  x3x365={ann_naive:.4%}  byIv={ann_iv:.4%}")
+            f"{iso(int(df['ts_ms'].iloc[-1]))}  x3x365={ann_naive:.4%}  byIv={ann_iv:.4%}  "
+            + (f"realized={ann_realized:.4%}" if ann_realized is not None else ""))
 
     os.makedirs(META_DIR, exist_ok=True)
     with open(os.path.join(META_DIR, "bybit_funding_meta.json"), "w") as f:
