@@ -2,263 +2,259 @@
   "files": {
     "data/bybit/BTC-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 56346,
+      "rows": 56370,
       "first_ts": 1585130400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-03-25T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BTC-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 14087,
+      "rows": 14093,
       "first_ts": 1585123200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-03-25T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BTC-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2349,
+      "rows": 2350,
       "first_ts": 1585094400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-03-25T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/BTC-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 7043,
+      "rows": 7046,
       "first_ts": 1585152000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-03-25T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ETH-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 47836,
+      "rows": 47860,
       "first_ts": 1615766400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-03-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ETH-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11959,
+      "rows": 11965,
       "first_ts": 1615766400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ETH-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1994,
+      "rows": 1995,
       "first_ts": 1615766400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ETH-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 6414,
+      "rows": 6417,
       "first_ts": 1603267200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/SOL-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 42700,
+      "rows": 42724,
       "first_ts": 1634256000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-10-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/SOL-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10675,
+      "rows": 10681,
       "first_ts": 1634256000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/SOL-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1780,
+      "rows": 1781,
       "first_ts": 1634256000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/SOL-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 6021,
+      "rows": 6024,
       "first_ts": 1624953600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-29T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XRP-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 46411,
+      "rows": 46435,
       "first_ts": 1620896400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-05-13T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/XRP-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11603,
+      "rows": 11609,
       "first_ts": 1620892800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XRP-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1935,
+      "rows": 1936,
       "first_ts": 1620864000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/XRP-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5801,
+      "rows": 5804,
       "first_ts": 1620921600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/HYPE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 15160,
+      "rows": 15184,
       "first_ts": 1733400000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-12-05T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/HYPE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3790,
+      "rows": 3796,
       "first_ts": 1733400000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-05T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/HYPE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 633,
+      "rows": 634,
       "first_ts": 1733356800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-05T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/HYPE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 1896,
+      "rows": 1899,
       "first_ts": 1733385600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-05T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BTW-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 1964,
+      "rows": 2060,
       "first_ts": 1780646400000,
-      "last_ts": 1787713200000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-06-05T08:00:00+00:00",
-      "last_utc": "2026-08-26T03:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BTW-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 491,
+      "rows": 515,
       "first_ts": 1780646400000,
-      "last_ts": 1787702400000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-06-05T08:00:00+00:00",
-      "last_utc": "2026-08-26T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BTW-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 83,
+      "rows": 87,
       "first_ts": 1780617600000,
-      "last_ts": 1787702400000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-06-05T00:00:00+00:00",
-      "last_utc": "2026-08-26T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/BTW-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 491,
+      "rows": 515,
       "first_ts": 1780646400000,
-      "last_ts": 1787702400000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-06-05T08:00:00+00:00",
-      "last_utc": "2026-08-26T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ZEC-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 41733,
+      "rows": 41757,
       "first_ts": 1637737200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-11-24T07:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ZEC-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10434,
+      "rows": 10440,
       "first_ts": 1637726400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-11-24T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ZEC-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1740,
+      "rows": 1741,
       "first_ts": 1637712000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-11-24T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ZEC-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5217,
+      "rows": 5220,
       "first_ts": 1637740800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-11-24T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DOGE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 45930,
+      "rows": 45954,
       "first_ts": 1622628000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-06-02T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/DOGE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11483,
+      "rows": 11489,
       "first_ts": 1622620800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DOGE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1915,
+      "rows": 1916,
       "first_ts": 1622592000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-02T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/DOGE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5741,
+      "rows": 5744,
       "first_ts": 1622649600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-02T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ACE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -298,295 +294,291 @@
     },
     "data/bybit/XAUT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 12305,
+      "rows": 12329,
       "first_ts": 1743678000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-04-03T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/XAUT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3077,
+      "rows": 3083,
       "first_ts": 1743667200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-04-03T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XAUT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 514,
+      "rows": 515,
       "first_ts": 1743638400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-04-03T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/XAUT-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3077,
+      "rows": 3083,
       "first_ts": 1743667200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-04-03T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/PUMPFUN-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 9959,
+      "rows": 9983,
       "first_ts": 1752123600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-07-10T05:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/PUMPFUN-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2490,
+      "rows": 2496,
       "first_ts": 1752120000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-07-10T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/PUMPFUN-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 416,
+      "rows": 417,
       "first_ts": 1752105600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-07-10T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/PUMPFUN-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2490,
+      "rows": 2496,
       "first_ts": 1752120000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-07-10T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/LINK-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 51307,
+      "rows": 51331,
       "first_ts": 1603270800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-10-21T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/LINK-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 12827,
+      "rows": 12833,
       "first_ts": 1603267200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/LINK-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2139,
+      "rows": 2140,
       "first_ts": 1603238400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/LINK-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 6414,
+      "rows": 6417,
       "first_ts": 1603267200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/NEAR-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 42792,
+      "rows": 42816,
       "first_ts": 1633924800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-10-11T04:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/NEAR-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10698,
+      "rows": 10704,
       "first_ts": 1633924800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-11T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/NEAR-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1784,
+      "rows": 1785,
       "first_ts": 1633910400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/NEAR-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5349,
+      "rows": 5352,
       "first_ts": 1633939200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-11T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ADA-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 47757,
+      "rows": 47781,
       "first_ts": 1616050800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-03-18T07:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ADA-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11940,
+      "rows": 11946,
       "first_ts": 1616040000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-18T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ADA-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1991,
+      "rows": 1992,
       "first_ts": 1616025600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-18T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ADA-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5970,
+      "rows": 5973,
       "first_ts": 1616054400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-18T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/SUI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 29127,
+      "rows": 29151,
       "first_ts": 1683118800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-05-03T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/SUI-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 7282,
+      "rows": 7288,
       "first_ts": 1683115200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/SUI-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1215,
+      "rows": 1216,
       "first_ts": 1683072000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/SUI-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3642,
+      "rows": 3645,
       "first_ts": 1683100800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BEAT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 6641,
+      "rows": 6761,
       "first_ts": 1763722800000,
-      "last_ts": 1787626800000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-11-21T11:00:00+00:00",
-      "last_utc": "2026-08-25T03:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BEAT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1661,
+      "rows": 1691,
       "first_ts": 1763712000000,
-      "last_ts": 1787616000000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-11-21T08:00:00+00:00",
-      "last_utc": "2026-08-25T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BEAT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 278,
+      "rows": 283,
       "first_ts": 1763683200000,
-      "last_ts": 1787616000000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-11-21T00:00:00+00:00",
-      "last_utc": "2026-08-25T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/BEAT-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3013,
+      "rows": 3043,
       "first_ts": 1763712000000,
-      "last_ts": 1787616000000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-11-21T08:00:00+00:00",
-      "last_utc": "2026-08-25T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/1000PEPE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 29129,
+      "rows": 29153,
       "first_ts": 1683111600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-05-03T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/1000PEPE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 7283,
+      "rows": 7289,
       "first_ts": 1683100800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/1000PEPE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1215,
+      "rows": 1216,
       "first_ts": 1683072000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/1000PEPE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3642,
+      "rows": 3645,
       "first_ts": 1683100800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/WLD-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 27161,
+      "rows": 27185,
       "first_ts": 1690196400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-07-24T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/WLD-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 6791,
+      "rows": 6797,
       "first_ts": 1690185600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-07-24T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/WLD-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1133,
+      "rows": 1134,
       "first_ts": 1690156800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-07-24T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/WLD-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3396,
+      "rows": 3399,
       "first_ts": 1690185600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-07-24T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/GPS-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -626,323 +618,323 @@
     },
     "data/bybit/HEMI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8151,
+      "rows": 8175,
       "first_ts": 1758632400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-09-23T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/HEMI-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2038,
+      "rows": 2044,
       "first_ts": 1758628800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-23T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/HEMI-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 341,
+      "rows": 342,
       "first_ts": 1758585600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-23T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/HEMI-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2038,
+      "rows": 2044,
       "first_ts": 1758628800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-23T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ENA-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 21089,
+      "rows": 21113,
       "first_ts": 1712055600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-04-02T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ENA-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 5273,
+      "rows": 5279,
       "first_ts": 1712044800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ENA-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 880,
+      "rows": 881,
       "first_ts": 1712016000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-02T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ENA-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4409,
+      "rows": 4415,
       "first_ts": 1712044800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ONDO-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 22771,
+      "rows": 22795,
       "first_ts": 1706000400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-01-23T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ONDO-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 5693,
+      "rows": 5699,
       "first_ts": 1705996800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-23T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ONDO-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 950,
+      "rows": 951,
       "first_ts": 1705968000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-23T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ONDO-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4619,
+      "rows": 4625,
       "first_ts": 1705996800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-23T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BNB-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 45285,
+      "rows": 45309,
       "first_ts": 1624950000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-06-29T07:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BNB-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11322,
+      "rows": 11328,
       "first_ts": 1624939200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-29T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BNB-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1888,
+      "rows": 1889,
       "first_ts": 1624924800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-29T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/BNB-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5661,
+      "rows": 5664,
       "first_ts": 1624953600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-06-29T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TAO-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 22602,
+      "rows": 22626,
       "first_ts": 1706608800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-01-30T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/TAO-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 5651,
+      "rows": 5657,
       "first_ts": 1706601600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-30T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TAO-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 943,
+      "rows": 944,
       "first_ts": 1706572800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-30T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/TAO-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4598,
+      "rows": 4604,
       "first_ts": 1706601600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-01-30T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AAVE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 46411,
+      "rows": 46435,
       "first_ts": 1620896400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-05-13T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/AAVE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11603,
+      "rows": 11609,
       "first_ts": 1620892800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AAVE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1935,
+      "rows": 1936,
       "first_ts": 1620864000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/AAVE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5801,
+      "rows": 5804,
       "first_ts": 1620921600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-13T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AVAX-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 43412,
+      "rows": 43436,
       "first_ts": 1631692800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-09-15T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/AVAX-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10853,
+      "rows": 10859,
       "first_ts": 1631692800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-09-15T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AVAX-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1810,
+      "rows": 1811,
       "first_ts": 1631664000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-09-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/AVAX-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5426,
+      "rows": 5429,
       "first_ts": 1631721600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-09-15T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/UNI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 41596,
+      "rows": 41620,
       "first_ts": 1638230400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-11-30T00:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/UNI-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10399,
+      "rows": 10405,
       "first_ts": 1638230400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-11-30T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/UNI-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1734,
+      "rows": 1735,
       "first_ts": 1638230400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-11-30T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/UNI-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5970,
+      "rows": 5973,
       "first_ts": 1616054400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-03-18T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/FARTCOIN-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 14803,
+      "rows": 14827,
       "first_ts": 1734685200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-12-20T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/FARTCOIN-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3701,
+      "rows": 3707,
       "first_ts": 1734681600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-20T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/FARTCOIN-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 618,
+      "rows": 619,
       "first_ts": 1734652800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-20T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/FARTCOIN-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3623,
+      "rows": 3629,
       "first_ts": 1734681600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-20T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AKE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8079,
+      "rows": 8103,
       "first_ts": 1758891600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-09-26T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/AKE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2020,
+      "rows": 2026,
       "first_ts": 1758888000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-26T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/AKE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 338,
+      "rows": 339,
       "first_ts": 1758844800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-26T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/AKE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2020,
+      "rows": 2026,
       "first_ts": 1758888000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-26T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/1000RATS-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1050,35 +1042,35 @@
     },
     "data/bybit/LTC-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 51307,
+      "rows": 51331,
       "first_ts": 1603270800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-10-21T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/LTC-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 12827,
+      "rows": 12833,
       "first_ts": 1603267200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/LTC-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2139,
+      "rows": 2140,
       "first_ts": 1603238400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/LTC-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 6414,
+      "rows": 6417,
       "first_ts": 1603267200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-21T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XLM-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1118,7 +1110,8 @@
       "first_ts": 1679580000000,
       "last_ts": 1787799600000,
       "first_utc": "2023-03-23T14:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ARB-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -1126,7 +1119,8 @@
       "first_ts": 1679572800000,
       "last_ts": 1787788800000,
       "first_utc": "2023-03-23T12:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ARB-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -1134,7 +1128,8 @@
       "first_ts": 1679529600000,
       "last_ts": 1787788800000,
       "first_utc": "2023-03-23T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/ARB-USDT-PERP.parquet": {
       "kind": "funding",
@@ -1142,7 +1137,8 @@
       "first_ts": 1679558400000,
       "last_ts": 1787788800000,
       "first_utc": "2023-03-23T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/TRIA-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1286,35 +1282,35 @@
     },
     "data/bybit/INJ-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 35301,
+      "rows": 35373,
       "first_ts": 1660719600000,
-      "last_ts": 1787799600000,
+      "last_ts": 1788058800000,
       "first_utc": "2022-08-17T07:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/INJ-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 8826,
+      "rows": 8844,
       "first_ts": 1660708800000,
-      "last_ts": 1787788800000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-08-17T04:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/INJ-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1472,
+      "rows": 1475,
       "first_ts": 1660694400000,
-      "last_ts": 1787788800000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-08-17T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/INJ-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4563,
+      "rows": 4572,
       "first_ts": 1660694400000,
-      "last_ts": 1787788800000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-08-17T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/H-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1426,67 +1422,67 @@
     },
     "data/bybit/CASHCAT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 570,
+      "rows": 594,
       "first_ts": 1785924000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-08-05T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/CASHCAT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 143,
+      "rows": 149,
       "first_ts": 1785916800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-08-05T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/CASHCAT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 25,
+      "rows": 26,
       "first_ts": 1785888000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-08-05T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/CASHCAT-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 143,
+      "rows": 149,
       "first_ts": 1785916800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-08-05T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TUT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 12666,
+      "rows": 12690,
       "first_ts": 1742378400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-03-19T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/TUT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3167,
+      "rows": 3173,
       "first_ts": 1742371200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-19T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TUT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 529,
+      "rows": 530,
       "first_ts": 1742342400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-19T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/TUT-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3167,
+      "rows": 3173,
       "first_ts": 1742371200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-19T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ETHFI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1526,35 +1522,35 @@
     },
     "data/bybit/PENGU-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 14870,
+      "rows": 14894,
       "first_ts": 1734444000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-12-17T14:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/PENGU-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3718,
+      "rows": 3724,
       "first_ts": 1734436800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-17T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/PENGU-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 621,
+      "rows": 622,
       "first_ts": 1734393600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/PENGU-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3718,
+      "rows": 3724,
       "first_ts": 1734436800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-17T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DOS-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -1666,75 +1662,75 @@
     },
     "data/binance/BTC-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 79048,
+      "rows": 79072,
       "first_ts": 1502942400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2017-08-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/BTC-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 19778,
+      "rows": 19784,
       "first_ts": 1502942400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-08-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BTC-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3300,
+      "rows": 3301,
       "first_ts": 1502928000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-08-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ETH-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 79048,
+      "rows": 79072,
       "first_ts": 1502942400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2017-08-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ETH-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 19778,
+      "rows": 19784,
       "first_ts": 1502942400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-08-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ETH-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3300,
+      "rows": 3301,
       "first_ts": 1502928000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-08-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/SOL-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 52994,
+      "rows": 53018,
       "first_ts": 1597125600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-08-11T06:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/SOL-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 13254,
+      "rows": 13260,
       "first_ts": 1597118400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-08-11T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/SOL-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2210,
+      "rows": 2211,
       "first_ts": 1597104000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-08-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ALLO-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -1765,99 +1761,99 @@
     },
     "data/binance/ZEC-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 65178,
+      "rows": 65202,
       "first_ts": 1553140800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-03-21T04:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ZEC-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 16304,
+      "rows": 16310,
       "first_ts": 1553140800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-03-21T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ZEC-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2719,
+      "rows": 2720,
       "first_ts": 1553126400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-03-21T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XRP-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 72844,
+      "rows": 72868,
       "first_ts": 1525420800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2018-05-04T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/XRP-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 18224,
+      "rows": 18230,
       "first_ts": 1525420800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-05-04T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XRP-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3040,
+      "rows": 3041,
       "first_ts": 1525392000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-05-04T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BNB-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 77111,
+      "rows": 77135,
       "first_ts": 1509937200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2017-11-06T03:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/BNB-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 19293,
+      "rows": 19299,
       "first_ts": 1509926400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-11-06T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BNB-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3219,
+      "rows": 3220,
       "first_ts": 1509926400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-11-06T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XAUT-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 3734,
+      "rows": 3758,
       "first_ts": 1774533600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-03-26T14:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/XAUT-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 934,
+      "rows": 940,
       "first_ts": 1774526400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-03-26T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XAUT-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 157,
+      "rows": 158,
       "first_ts": 1774483200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-03-26T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ACE-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -1888,51 +1884,51 @@
     },
     "data/binance/DOGE-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 62636,
+      "rows": 62660,
       "first_ts": 1562328000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-07-05T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/DOGE-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 15668,
+      "rows": 15674,
       "first_ts": 1562328000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-07-05T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/DOGE-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2613,
+      "rows": 2614,
       "first_ts": 1562284800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-07-05T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/U-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 5468,
+      "rows": 5492,
       "first_ts": 1768291200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-01-13T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/U-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1367,
+      "rows": 1373,
       "first_ts": 1768291200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-01-13T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/U-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 229,
+      "rows": 230,
       "first_ts": 1768262400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-01-13T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PAXG-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -1987,147 +1983,147 @@
     },
     "data/binance/LINK-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 66702,
+      "rows": 66726,
       "first_ts": 1547632800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-01-16T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/LINK-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 16686,
+      "rows": 16692,
       "first_ts": 1547625600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-01-16T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/LINK-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2783,
+      "rows": 2784,
       "first_ts": 1547596800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-01-16T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/SUI-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 29128,
+      "rows": 29152,
       "first_ts": 1683115200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-05-03T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/SUI-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 7282,
+      "rows": 7288,
       "first_ts": 1683115200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/SUI-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1215,
+      "rows": 1216,
       "first_ts": 1683072000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-03T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TRX-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 71929,
+      "rows": 71953,
       "first_ts": 1528714800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2018-06-11T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/TRX-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 17996,
+      "rows": 18002,
       "first_ts": 1528704000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-06-11T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TRX-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3002,
+      "rows": 3003,
       "first_ts": 1528675200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-06-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/HEMI-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8152,
+      "rows": 8176,
       "first_ts": 1758628800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-09-23T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/HEMI-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2038,
+      "rows": 2044,
       "first_ts": 1758628800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-23T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/HEMI-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 341,
+      "rows": 342,
       "first_ts": 1758585600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-23T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/NEAR-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 51459,
+      "rows": 51483,
       "first_ts": 1602651600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-10-14T05:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/NEAR-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 12870,
+      "rows": 12876,
       "first_ts": 1602648000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-14T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/NEAR-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2146,
+      "rows": 2147,
       "first_ts": 1602633600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-14T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/WLD-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 27163,
+      "rows": 27187,
       "first_ts": 1690189200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-07-24T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/WLD-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 6791,
+      "rows": 6797,
       "first_ts": 1690185600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-07-24T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/WLD-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1133,
+      "rows": 1134,
       "first_ts": 1690156800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-07-24T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/GPS-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2158,75 +2154,75 @@
     },
     "data/binance/ADA-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 73256,
+      "rows": 73280,
       "first_ts": 1523937600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2018-04-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ADA-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 18327,
+      "rows": 18333,
       "first_ts": 1523937600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-04-17T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ADA-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3057,
+      "rows": 3058,
       "first_ts": 1523923200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-04-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XPL-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8103,
+      "rows": 8127,
       "first_ts": 1758805200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-09-25T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/XPL-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2026,
+      "rows": 2032,
       "first_ts": 1758801600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-25T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XPL-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 339,
+      "rows": 340,
       "first_ts": 1758758400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-25T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PUMP-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8440,
+      "rows": 8464,
       "first_ts": 1757592000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-09-11T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/PUMP-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2110,
+      "rows": 2116,
       "first_ts": 1757592000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-11T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PUMP-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 353,
+      "rows": 354,
       "first_ts": 1757548800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-09-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/RE-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2234,7 +2230,8 @@
       "first_ts": 1781791200000,
       "last_ts": 1787799600000,
       "first_utc": "2026-06-18T14:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/binance/RE-USDT_4h.parquet": {
       "kind": "ohlcv",
@@ -2242,7 +2239,8 @@
       "first_ts": 1781784000000,
       "last_ts": 1787788800000,
       "first_utc": "2026-06-18T12:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/RE-USDT_1d.parquet": {
       "kind": "ohlcv",
@@ -2250,31 +2248,32 @@
       "first_ts": 1781740800000,
       "last_ts": 1787788800000,
       "first_utc": "2026-06-18T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/UNI-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 52109,
+      "rows": 52133,
       "first_ts": 1600311600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-09-17T03:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/UNI-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 13033,
+      "rows": 13039,
       "first_ts": 1600300800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-09-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/UNI-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2173,
+      "rows": 2174,
       "first_ts": 1600300800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-09-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BCH-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2302,195 +2301,195 @@
     },
     "data/binance/TUT-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 12463,
+      "rows": 12487,
       "first_ts": 1743109200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-03-27T21:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/TUT-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3116,
+      "rows": 3122,
       "first_ts": 1743105600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-27T20:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TUT-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 521,
+      "rows": 522,
       "first_ts": 1743033600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-27T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PEPE-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 29074,
+      "rows": 29098,
       "first_ts": 1683309600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-05-05T18:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/PEPE-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 7269,
+      "rows": 7275,
       "first_ts": 1683302400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-05T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PEPE-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1213,
+      "rows": 1214,
       "first_ts": 1683244800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-05-05T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/AVAX-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 51986,
+      "rows": 52010,
       "first_ts": 1600754400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-09-22T06:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/AVAX-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 13002,
+      "rows": 13008,
       "first_ts": 1600747200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-09-22T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/AVAX-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2168,
+      "rows": 2169,
       "first_ts": 1600732800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-09-22T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/LTC-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 76223,
+      "rows": 76247,
       "first_ts": 1513134000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2017-12-13T03:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/LTC-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 19071,
+      "rows": 19077,
       "first_ts": 1513123200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-12-13T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/LTC-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3182,
+      "rows": 3183,
       "first_ts": 1513123200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2017-12-13T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TAO-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 20872,
+      "rows": 20896,
       "first_ts": 1712836800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-04-11T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/TAO-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 5218,
+      "rows": 5224,
       "first_ts": 1712836800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-11T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TAO-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 871,
+      "rows": 872,
       "first_ts": 1712793600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/AAVE-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 51437,
+      "rows": 51461,
       "first_ts": 1602730800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2020-10-15T03:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/AAVE-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 12865,
+      "rows": 12871,
       "first_ts": 1602720000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/AAVE-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2145,
+      "rows": 2146,
       "first_ts": 1602720000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2020-10-15T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XLM-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 72195,
+      "rows": 72219,
       "first_ts": 1527757200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2018-05-31T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/XLM-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 18062,
+      "rows": 18068,
       "first_ts": 1527753600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-05-31T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/XLM-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 3013,
+      "rows": 3014,
       "first_ts": 1527724800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2018-05-31T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ENA-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 21092,
+      "rows": 21116,
       "first_ts": 1712044800000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-04-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ENA-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 5273,
+      "rows": 5279,
       "first_ts": 1712044800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ENA-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 880,
+      "rows": 881,
       "first_ts": 1712016000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-04-02T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/MUBARAK-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2521,27 +2520,27 @@
     },
     "data/binance/ONDO-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 12110,
+      "rows": 12134,
       "first_ts": 1744380000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-04-11T14:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ONDO-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3028,
+      "rows": 3034,
       "first_ts": 1744372800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-04-11T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ONDO-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 506,
+      "rows": 507,
       "first_ts": 1744329600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-04-11T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ALPINE-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2600,7 +2599,8 @@
       "first_ts": 1709200800000,
       "last_ts": 1787799600000,
       "first_utc": "2024-02-29T10:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/binance/PORTAL-USDT_4h.parquet": {
       "kind": "ohlcv",
@@ -2608,7 +2608,8 @@
       "first_ts": 1709193600000,
       "last_ts": 1787788800000,
       "first_utc": "2024-02-29T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/PORTAL-USDT_1d.parquet": {
       "kind": "ohlcv",
@@ -2616,7 +2617,8 @@
       "first_ts": 1709164800000,
       "last_ts": 1787788800000,
       "first_utc": "2024-02-29T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/TREE-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2698,27 +2700,27 @@
     },
     "data/binance/FET-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 65670,
+      "rows": 65694,
       "first_ts": 1551348000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-02-28T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/FET-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 16428,
+      "rows": 16434,
       "first_ts": 1551340800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-02-28T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/FET-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2740,
+      "rows": 2741,
       "first_ts": 1551312000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-02-28T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/HBAR-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2746,27 +2748,27 @@
     },
     "data/binance/GRAM-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 1388,
+      "rows": 1412,
       "first_ts": 1782979200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-07-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/GRAM-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 347,
+      "rows": 353,
       "first_ts": 1782979200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-07-02T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/GRAM-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 59,
+      "rows": 60,
       "first_ts": 1782950400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-07-02T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ACM-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -2797,105 +2799,99 @@
     },
     "data/binance/POL-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 17130,
+      "rows": 17178,
       "first_ts": 1726221600000,
-      "last_ts": 1787886000000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-09-13T10:00:00+00:00",
-      "last_utc": "2026-08-28T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/POL-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 4283,
+      "rows": 4295,
       "first_ts": 1726214400000,
-      "last_ts": 1787875200000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-09-13T08:00:00+00:00",
-      "last_utc": "2026-08-28T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/POL-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 715,
+      "rows": 717,
       "first_ts": 1726185600000,
-      "last_ts": 1787875200000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-09-13T00:00:00+00:00",
-      "last_utc": "2026-08-28T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PENGU-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 14870,
+      "rows": 14894,
       "first_ts": 1734444000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-12-17T14:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/PENGU-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3718,
+      "rows": 3724,
       "first_ts": 1734436800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-17T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PENGU-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 621,
+      "rows": 622,
       "first_ts": 1734393600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-12-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ICP-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 46340,
+      "rows": 46484,
       "first_ts": 1620694800000,
-      "last_ts": 1787540400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-05-11T01:00:00+00:00",
-      "last_utc": "2026-08-24T03:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ICP-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11587,
+      "rows": 11623,
       "first_ts": 1620691200000,
-      "last_ts": 1787529600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-11T00:00:00+00:00",
-      "last_utc": "2026-08-24T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ICP-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1932,
+      "rows": 1938,
       "first_ts": 1620691200000,
-      "last_ts": 1787529600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-05-11T00:00:00+00:00",
-      "last_utc": "2026-08-24T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BANK-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 6699,
+      "rows": 6950,
       "first_ts": 1763042400000,
-      "last_ts": 1787155200000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-11-13T14:00:00+00:00",
-      "last_utc": "2026-08-19T16:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/BANK-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1676,
+      "rows": 1738,
       "first_ts": 1763035200000,
-      "last_ts": 1787155200000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-11-13T12:00:00+00:00",
-      "last_utc": "2026-08-19T16:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BANK-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 280,
+      "rows": 291,
       "first_ts": 1762992000000,
-      "last_ts": 1787097600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-11-13T00:00:00+00:00",
-      "last_utc": "2026-08-19T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/MUBARAK-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -2971,35 +2967,35 @@
     },
     "data/bybit/LIT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 5799,
+      "rows": 5823,
       "first_ts": 1767099600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-12-30T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/LIT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1450,
+      "rows": 1456,
       "first_ts": 1767096000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-30T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/LIT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 243,
+      "rows": 244,
       "first_ts": 1767052800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-30T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/LIT-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 1451,
+      "rows": 1457,
       "first_ts": 1767081600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-30T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/WLFI-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -3078,35 +3074,35 @@
     },
     "data/bybit/TRUMP-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 14106,
+      "rows": 14130,
       "first_ts": 1737194400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-01-18T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/TRUMP-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3527,
+      "rows": 3533,
       "first_ts": 1737187200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-01-18T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TRUMP-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 589,
+      "rows": 590,
       "first_ts": 1737158400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-01-18T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/TRUMP-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 3527,
+      "rows": 3533,
       "first_ts": 1737187200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-01-18T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/RE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -3146,35 +3142,35 @@
     },
     "data/bybit/XMR-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 40505,
+      "rows": 40529,
       "first_ts": 1642158000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2022-01-14T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/XMR-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10127,
+      "rows": 10133,
       "first_ts": 1642147200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-01-14T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XMR-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1689,
+      "rows": 1690,
       "first_ts": 1642118400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-01-14T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/XMR-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5063,
+      "rows": 5066,
       "first_ts": 1642176000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2022-01-14T16:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/WIF-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -3214,7 +3210,8 @@
       "first_ts": 1758272400000,
       "last_ts": 1787799600000,
       "first_utc": "2025-09-19T09:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ASTER-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -3222,7 +3219,8 @@
       "first_ts": 1758268800000,
       "last_ts": 1787788800000,
       "first_utc": "2025-09-19T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ASTER-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -3230,7 +3228,8 @@
       "first_ts": 1758240000000,
       "last_ts": 1787788800000,
       "first_utc": "2025-09-19T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/ASTER-USDT-PERP.parquet": {
       "kind": "funding",
@@ -3238,7 +3237,8 @@
       "first_ts": 1758268800000,
       "last_ts": 1787788800000,
       "first_utc": "2025-09-19T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/APT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -3274,27 +3274,27 @@
     },
     "data/binance/TRUMP-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 14084,
+      "rows": 14108,
       "first_ts": 1737273600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-01-19T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/TRUMP-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3521,
+      "rows": 3527,
       "first_ts": 1737273600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-01-19T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/TRUMP-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 588,
+      "rows": 589,
       "first_ts": 1737244800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-01-19T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ARB-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -3325,27 +3325,27 @@
     },
     "data/binance/ASTER-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 7840,
+      "rows": 7864,
       "first_ts": 1759752000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-10-06T12:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ASTER-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1960,
+      "rows": 1966,
       "first_ts": 1759752000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-10-06T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ASTER-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 328,
+      "rows": 329,
       "first_ts": 1759708800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-10-06T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BB-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -3376,35 +3376,35 @@
     },
     "data/bybit/ONG-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 24114,
+      "rows": 24138,
       "first_ts": 1701165600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-11-28T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/ONG-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 6029,
+      "rows": 6035,
       "first_ts": 1701158400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-11-28T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ONG-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1006,
+      "rows": 1007,
       "first_ts": 1701129600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-11-28T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/ONG-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4898,
+      "rows": 4922,
       "first_ts": 1701158400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-11-28T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BOME-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -3620,35 +3620,35 @@
     },
     "data/bybit/WLFI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8898,
+      "rows": 8922,
       "first_ts": 1755943200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-08-23T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/WLFI-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2225,
+      "rows": 2231,
       "first_ts": 1755936000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-23T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/WLFI-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 372,
+      "rows": 373,
       "first_ts": 1755907200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-23T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/WLFI-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2225,
+      "rows": 2231,
       "first_ts": 1755936000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-23T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/MNT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -3684,35 +3684,35 @@
     },
     "data/bybit/XPL-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8921,
+      "rows": 8945,
       "first_ts": 1755860400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-08-22T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/XPL-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2231,
+      "rows": 2237,
       "first_ts": 1755849600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-22T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/XPL-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 373,
+      "rows": 374,
       "first_ts": 1755820800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-22T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/XPL-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2231,
+      "rows": 2237,
       "first_ts": 1755849600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-22T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BOME-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -3743,27 +3743,27 @@
     },
     "data/binance/ONG-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 65958,
+      "rows": 65982,
       "first_ts": 1550311200000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-02-16T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ONG-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 16500,
+      "rows": 16506,
       "first_ts": 1550304000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-02-16T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ONG-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2752,
+      "rows": 2753,
       "first_ts": 1550275200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-02-16T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/NEIRO-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -3825,7 +3825,8 @@
       "first_ts": 1528441200000,
       "last_ts": 1787799600000,
       "first_utc": "2018-06-08T07:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/binance/ONT-USDT_4h.parquet": {
       "kind": "ohlcv",
@@ -3833,7 +3834,8 @@
       "first_ts": 1528430400000,
       "last_ts": 1787788800000,
       "first_utc": "2018-06-08T04:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/ONT-USDT_1d.parquet": {
       "kind": "ohlcv",
@@ -3841,7 +3843,8 @@
       "first_ts": 1528416000000,
       "last_ts": 1787788800000,
       "first_utc": "2018-06-08T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/PEOPLE-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -4114,27 +4117,27 @@
     },
     "data/binance/DASH-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 64986,
+      "rows": 65034,
       "first_ts": 1553745600000,
-      "last_ts": 1787886000000,
+      "last_ts": 1788058800000,
       "first_utc": "2019-03-28T04:00:00+00:00",
-      "last_utc": "2026-08-28T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/DASH-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 16256,
+      "rows": 16268,
       "first_ts": 1553745600000,
-      "last_ts": 1787875200000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-03-28T04:00:00+00:00",
-      "last_utc": "2026-08-28T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/DASH-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 2711,
+      "rows": 2713,
       "first_ts": 1553731200000,
-      "last_ts": 1787875200000,
+      "last_ts": 1788048000000,
       "first_utc": "2019-03-28T00:00:00+00:00",
-      "last_utc": "2026-08-28T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/GALA-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -4196,7 +4199,8 @@
       "first_ts": 1725526800000,
       "last_ts": 1787799600000,
       "first_utc": "2024-09-05T09:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/POL-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -4204,7 +4208,8 @@
       "first_ts": 1725523200000,
       "last_ts": 1787788800000,
       "first_utc": "2024-09-05T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/POL-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -4212,7 +4217,8 @@
       "first_ts": 1725494400000,
       "last_ts": 1787788800000,
       "first_utc": "2024-09-05T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/POL-USDT-PERP.parquet": {
       "kind": "funding",
@@ -4220,43 +4226,40 @@
       "first_ts": 1725523200000,
       "last_ts": 1787788800000,
       "first_utc": "2024-09-05T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/DASH-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 42649,
+      "rows": 42793,
       "first_ts": 1634007600000,
-      "last_ts": 1787540400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-10-12T03:00:00+00:00",
-      "last_utc": "2026-08-24T03:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/DASH-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 10663,
+      "rows": 10699,
       "first_ts": 1633996800000,
-      "last_ts": 1787529600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-12T00:00:00+00:00",
-      "last_utc": "2026-08-24T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DASH-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1778,
+      "rows": 1784,
       "first_ts": 1633996800000,
-      "last_ts": 1787529600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-12T00:00:00+00:00",
-      "last_utc": "2026-08-24T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/DASH-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 5331,
+      "rows": 5349,
       "first_ts": 1634025600000,
-      "last_ts": 1787529600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-10-12T08:00:00+00:00",
-      "last_utc": "2026-08-24T00:00:00+00:00",
-      "stale": true
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/STX-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -4382,27 +4385,27 @@
     },
     "data/binance/ZRO-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 19191,
+      "rows": 19215,
       "first_ts": 1718888400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-06-20T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ZRO-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 4798,
+      "rows": 4804,
       "first_ts": 1718884800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-06-20T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ZRO-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 801,
+      "rows": 802,
       "first_ts": 1718841600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-06-20T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/ZRO-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -4694,7 +4697,8 @@
       "first_ts": 1759150800000,
       "last_ts": 1787799600000,
       "first_utc": "2025-09-29T13:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/binance/FF-USDT_4h.parquet": {
       "kind": "ohlcv",
@@ -4702,7 +4706,8 @@
       "first_ts": 1759147200000,
       "last_ts": 1787788800000,
       "first_utc": "2025-09-29T12:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/FF-USDT_1d.parquet": {
       "kind": "ohlcv",
@@ -4710,7 +4715,8 @@
       "first_ts": 1759104000000,
       "last_ts": 1787788800000,
       "first_utc": "2025-09-29T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/UAI-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -4826,7 +4832,8 @@
       "first_ts": 1709272800000,
       "last_ts": 1787799600000,
       "first_utc": "2024-03-01T06:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/PORTAL-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -4834,7 +4841,8 @@
       "first_ts": 1709265600000,
       "last_ts": 1787788800000,
       "first_utc": "2024-03-01T04:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/PORTAL-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -4842,7 +4850,8 @@
       "first_ts": 1709251200000,
       "last_ts": 1787788800000,
       "first_utc": "2024-03-01T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/PORTAL-USDT-PERP.parquet": {
       "kind": "funding",
@@ -4850,7 +4859,8 @@
       "first_ts": 1709251200000,
       "last_ts": 1787788800000,
       "first_utc": "2024-03-01T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/VIRTUAL-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -4878,27 +4888,27 @@
     },
     "data/binance/PROM-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 30259,
+      "rows": 30283,
       "first_ts": 1679040000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2023-03-17T08:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/PROM-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 7565,
+      "rows": 7571,
       "first_ts": 1679040000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-03-17T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/PROM-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1262,
+      "rows": 1263,
       "first_ts": 1679011200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2023-03-17T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/AERO-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -5087,27 +5097,27 @@
     },
     "data/binance/BMT-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 12685,
+      "rows": 12709,
       "first_ts": 1742310000000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-03-18T15:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/BMT-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 3172,
+      "rows": 3178,
       "first_ts": 1742299200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-18T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/BMT-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 530,
+      "rows": 531,
       "first_ts": 1742256000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-03-18T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/STX-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -5189,35 +5199,35 @@
     },
     "data/bybit/BTR-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 8801,
+      "rows": 8825,
       "first_ts": 1756292400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-08-27T11:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/BTR-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 2201,
+      "rows": 2207,
       "first_ts": 1756281600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-27T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/BTR-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 368,
+      "rows": 369,
       "first_ts": 1756252800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-27T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/BTR-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 2201,
+      "rows": 2207,
       "first_ts": 1756281600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-08-27T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/TAC-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -5289,7 +5299,8 @@
       "first_ts": 1741852800000,
       "last_ts": 1787799600000,
       "first_utc": "2025-03-13T08:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/BMT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -5297,7 +5308,8 @@
       "first_ts": 1741852800000,
       "last_ts": 1787788800000,
       "first_utc": "2025-03-13T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/BMT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -5305,7 +5317,8 @@
       "first_ts": 1741824000000,
       "last_ts": 1787788800000,
       "first_utc": "2025-03-13T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/BMT-USDT-PERP.parquet": {
       "kind": "funding",
@@ -5313,7 +5326,8 @@
       "first_ts": 1741852800000,
       "last_ts": 1787788800000,
       "first_utc": "2025-03-13T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/EDEN-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -5353,7 +5367,8 @@
       "first_ts": 1654506000000,
       "last_ts": 1787799600000,
       "first_utc": "2022-06-06T09:00:00+00:00",
-      "last_utc": "2026-08-27T03:00:00+00:00"
+      "last_utc": "2026-08-27T03:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ONT-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
@@ -5361,7 +5376,8 @@
       "first_ts": 1654502400000,
       "last_ts": 1787788800000,
       "first_utc": "2022-06-06T08:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/bybit/ONT-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
@@ -5369,7 +5385,8 @@
       "first_ts": 1654473600000,
       "last_ts": 1787788800000,
       "first_utc": "2022-06-06T00:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "funding/bybit/ONT-USDT-PERP.parquet": {
       "kind": "funding",
@@ -5377,7 +5394,8 @@
       "first_ts": 1654531200000,
       "last_ts": 1787788800000,
       "first_utc": "2022-06-06T16:00:00+00:00",
-      "last_utc": "2026-08-27T00:00:00+00:00"
+      "last_utc": "2026-08-27T00:00:00+00:00",
+      "stale": true
     },
     "data/binance/BICO-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -5501,67 +5519,67 @@
     },
     "data/bybit/CHIP-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 3234,
+      "rows": 3258,
       "first_ts": 1776333600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-04-16T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/CHIP-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 809,
+      "rows": 815,
       "first_ts": 1776326400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-04-16T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/CHIP-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 136,
+      "rows": 137,
       "first_ts": 1776297600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-04-16T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/CHIP-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 809,
+      "rows": 815,
       "first_ts": 1776326400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-04-16T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/MAGMA-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 5901,
+      "rows": 5925,
       "first_ts": 1766732400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-12-26T07:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/MAGMA-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1476,
+      "rows": 1482,
       "first_ts": 1766721600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-26T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/MAGMA-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 247,
+      "rows": 248,
       "first_ts": 1766707200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-26T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/MAGMA-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 1476,
+      "rows": 1482,
       "first_ts": 1766721600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-12-26T04:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/MOVR-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -5637,59 +5655,59 @@
     },
     "data/binance/CHIP-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 3111,
+      "rows": 3135,
       "first_ts": 1776776400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2026-04-21T13:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/CHIP-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 778,
+      "rows": 784,
       "first_ts": 1776772800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-04-21T12:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/CHIP-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 131,
+      "rows": 132,
       "first_ts": 1776729600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2026-04-21T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DEXE-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 18354,
+      "rows": 18378,
       "first_ts": 1721901600000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2024-07-25T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/bybit/DEXE-USDT-PERP_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 4589,
+      "rows": 4595,
       "first_ts": 1721894400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-07-25T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/DEXE-USDT-PERP_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 766,
+      "rows": 767,
       "first_ts": 1721865600000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-07-25T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "funding/bybit/DEXE-USDT-PERP.parquet": {
       "kind": "funding",
-      "rows": 4215,
+      "rows": 4221,
       "first_ts": 1721894400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2024-07-25T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/bybit/LIGHT-USDT-PERP_1h.parquet": {
       "kind": "ohlcv",
@@ -5725,51 +5743,51 @@
     },
     "data/binance/DEXE-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 44699,
+      "rows": 44723,
       "first_ts": 1627034400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2021-07-23T10:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/DEXE-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 11177,
+      "rows": 11183,
       "first_ts": 1627027200000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-07-23T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/DEXE-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 1864,
+      "rows": 1865,
       "first_ts": 1626998400000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2021-07-23T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ENSO-USDT_1h.parquet": {
       "kind": "ohlcv",
-      "rows": 7651,
+      "rows": 7675,
       "first_ts": 1760432400000,
-      "last_ts": 1787972400000,
+      "last_ts": 1788058800000,
       "first_utc": "2025-10-14T09:00:00+00:00",
-      "last_utc": "2026-08-29T03:00:00+00:00"
+      "last_utc": "2026-08-30T03:00:00+00:00"
     },
     "data/binance/ENSO-USDT_4h.parquet": {
       "kind": "ohlcv",
-      "rows": 1913,
+      "rows": 1919,
       "first_ts": 1760428800000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-10-14T08:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/ENSO-USDT_1d.parquet": {
       "kind": "ohlcv",
-      "rows": 320,
+      "rows": 321,
       "first_ts": 1760400000000,
-      "last_ts": 1787961600000,
+      "last_ts": 1788048000000,
       "first_utc": "2025-10-14T00:00:00+00:00",
-      "last_utc": "2026-08-29T00:00:00+00:00"
+      "last_utc": "2026-08-30T00:00:00+00:00"
     },
     "data/binance/MANTRA-USDT_1h.parquet": {
       "kind": "ohlcv",
@@ -5794,6 +5812,406 @@
       "last_ts": 1787961600000,
       "first_utc": "2026-03-04T00:00:00+00:00",
       "last_utc": "2026-08-29T00:00:00+00:00"
+    },
+    "data/bybit/HNT-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 40288,
+      "first_ts": 1643025600000,
+      "last_ts": 1788058800000,
+      "first_utc": "2022-01-24T12:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/HNT-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 10072,
+      "first_ts": 1643025600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2022-01-24T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/HNT-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 1680,
+      "first_ts": 1642982400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2022-01-24T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/HNT-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 5036,
+      "first_ts": 1643040000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2022-01-24T16:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/4-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 7816,
+      "first_ts": 1759924800000,
+      "last_ts": 1788058800000,
+      "first_utc": "2025-10-08T12:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/4-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1954,
+      "first_ts": 1759924800000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-10-08T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/4-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 327,
+      "first_ts": 1759881600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-10-08T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/4-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 1954,
+      "first_ts": 1759924800000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-10-08T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/NIL-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 12663,
+      "first_ts": 1742475600000,
+      "last_ts": 1788058800000,
+      "first_utc": "2025-03-20T13:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/NIL-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 3166,
+      "first_ts": 1742472000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-03-20T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/NIL-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 529,
+      "first_ts": 1742428800000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-03-20T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/NIL-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 3166,
+      "first_ts": 1742472000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-03-20T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/NIULAI-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 45,
+      "first_ts": 1787900400000,
+      "last_ts": 1788058800000,
+      "first_utc": "2026-08-28T07:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/NIULAI-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 12,
+      "first_ts": 1787889600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-08-28T04:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/NIULAI-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 3,
+      "first_ts": 1787875200000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-08-28T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/NIULAI-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 12,
+      "first_ts": 1787889600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-08-28T04:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/ZKP-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 6019,
+      "first_ts": 1766394000000,
+      "last_ts": 1788058800000,
+      "first_utc": "2025-12-22T09:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/ZKP-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1505,
+      "first_ts": 1766390400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-12-22T08:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/ZKP-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 252,
+      "first_ts": 1766361600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-12-22T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/ZKP-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 2641,
+      "first_ts": 1766376000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-12-22T04:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/COTI-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 41540,
+      "first_ts": 1638518400000,
+      "last_ts": 1788058800000,
+      "first_utc": "2021-12-03T08:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/COTI-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 10385,
+      "first_ts": 1638518400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2021-12-03T08:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/COTI-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 1732,
+      "first_ts": 1638489600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2021-12-03T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/COTI-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 5606,
+      "first_ts": 1638518400000,
+      "last_ts": 1788058800000,
+      "first_utc": "2021-12-03T08:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/SKR-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 5321,
+      "first_ts": 1768906800000,
+      "last_ts": 1788058800000,
+      "first_utc": "2026-01-20T11:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/SKR-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1331,
+      "first_ts": 1768896000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-01-20T08:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/SKR-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 223,
+      "first_ts": 1768867200000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-01-20T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/SKR-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 1395,
+      "first_ts": 1768910400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-01-20T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/ICP-USDT-PERP_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 43436,
+      "first_ts": 1631692800000,
+      "last_ts": 1788058800000,
+      "first_utc": "2021-09-15T08:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/bybit/ICP-USDT-PERP_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 10859,
+      "first_ts": 1631692800000,
+      "last_ts": 1788048000000,
+      "first_utc": "2021-09-15T08:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/bybit/ICP-USDT-PERP_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 1811,
+      "first_ts": 1631664000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2021-09-15T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "funding/bybit/ICP-USDT-PERP.parquet": {
+      "kind": "funding",
+      "rows": 5429,
+      "first_ts": 1631721600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2021-09-15T16:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/GIGGLE-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 7414,
+      "first_ts": 1761372000000,
+      "last_ts": 1788058800000,
+      "first_utc": "2025-10-25T06:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/GIGGLE-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1854,
+      "first_ts": 1761364800000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-10-25T04:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/GIGGLE-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 310,
+      "first_ts": 1761350400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-10-25T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/NIL-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 12567,
+      "first_ts": 1742821200000,
+      "last_ts": 1788058800000,
+      "first_utc": "2025-03-24T13:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/NIL-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 3142,
+      "first_ts": 1742817600000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-03-24T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/NIL-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 525,
+      "first_ts": 1742774400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2025-03-24T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/COTI-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 57012,
+      "first_ts": 1582725600000,
+      "last_ts": 1788058800000,
+      "first_utc": "2020-02-26T14:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/COTI-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 14260,
+      "first_ts": 1582718400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2020-02-26T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/COTI-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 2378,
+      "first_ts": 1582675200000,
+      "last_ts": 1788048000000,
+      "first_utc": "2020-02-26T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/ZKP-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 5630,
+      "first_ts": 1767794400000,
+      "last_ts": 1788058800000,
+      "first_utc": "2026-01-07T14:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/ZKP-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1408,
+      "first_ts": 1767787200000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-01-07T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/ZKP-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 236,
+      "first_ts": 1767744000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-01-07T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/OPG-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 2392,
+      "first_ts": 1779451200000,
+      "last_ts": 1788058800000,
+      "first_utc": "2026-05-22T12:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/OPG-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 598,
+      "first_ts": 1779451200000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-05-22T12:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/OPG-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 101,
+      "first_ts": 1779408000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-05-22T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/ROBO-USDT_1h.parquet": {
+      "kind": "ohlcv",
+      "rows": 4284,
+      "first_ts": 1772640000000,
+      "last_ts": 1788058800000,
+      "first_utc": "2026-03-04T16:00:00+00:00",
+      "last_utc": "2026-08-30T03:00:00+00:00"
+    },
+    "data/binance/ROBO-USDT_4h.parquet": {
+      "kind": "ohlcv",
+      "rows": 1071,
+      "first_ts": 1772640000000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-03-04T16:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
+    },
+    "data/binance/ROBO-USDT_1d.parquet": {
+      "kind": "ohlcv",
+      "rows": 180,
+      "first_ts": 1772582400000,
+      "last_ts": 1788048000000,
+      "first_utc": "2026-03-04T00:00:00+00:00",
+      "last_utc": "2026-08-30T00:00:00+00:00"
     }
   },
   "selected_symbols": {
@@ -5802,107 +6220,108 @@
       "ETH-USDT-PERP",
       "SOL-USDT-PERP",
       "XRP-USDT-PERP",
-      "HYPE-USDT-PERP",
       "ZEC-USDT-PERP",
-      "ENA-USDT-PERP",
+      "HYPE-USDT-PERP",
       "TRUMP-USDT-PERP",
-      "DOGE-USDT-PERP",
-      "SUI-USDT-PERP",
-      "PUMPFUN-USDT-PERP",
-      "XAUT-USDT-PERP",
-      "HEMI-USDT-PERP",
-      "LINK-USDT-PERP",
-      "ADA-USDT-PERP",
-      "AKE-USDT-PERP",
       "BTR-USDT-PERP",
+      "ENA-USDT-PERP",
+      "HNT-USDT-PERP",
+      "PUMPFUN-USDT-PERP",
+      "DOGE-USDT-PERP",
+      "AKE-USDT-PERP",
       "MAGMA-USDT-PERP",
-      "1000PEPE-USDT-PERP",
       "NEAR-USDT-PERP",
-      "TAO-USDT-PERP",
-      "WLD-USDT-PERP",
-      "FARTCOIN-USDT-PERP",
-      "ONDO-USDT-PERP",
-      "AAVE-USDT-PERP",
-      "XPL-USDT-PERP",
-      "LIT-USDT-PERP",
       "UNI-USDT-PERP",
-      "XMR-USDT-PERP",
-      "BNB-USDT-PERP",
-      "LTC-USDT-PERP",
-      "DEXE-USDT-PERP",
-      "PENGU-USDT-PERP",
-      "CASHCAT-USDT-PERP",
+      "BEAT-USDT-PERP",
+      "SUI-USDT-PERP",
+      "1000PEPE-USDT-PERP",
       "ONG-USDT-PERP",
-      "CHIP-USDT-PERP",
-      "MOVR-USDT-PERP",
-      "LIGHT-USDT-PERP",
-      "BCH-USDT-PERP",
-      "AVAX-USDT-PERP",
-      "STX-USDT-PERP",
-      "EDEN-USDT-PERP",
-      "WIF-USDT-PERP",
-      "CYS-USDT-PERP",
-      "MON-USDT-PERP",
-      "WLFI-USDT-PERP",
-      "XLM-USDT-PERP",
-      "APT-USDT-PERP",
+      "4-USDT-PERP",
+      "ADA-USDT-PERP",
       "TUT-USDT-PERP",
-      "SPX-USDT-PERP"
+      "FARTCOIN-USDT-PERP",
+      "NIL-USDT-PERP",
+      "WLD-USDT-PERP",
+      "LINK-USDT-PERP",
+      "TAO-USDT-PERP",
+      "CASHCAT-USDT-PERP",
+      "LIT-USDT-PERP",
+      "HEMI-USDT-PERP",
+      "NIULAI-USDT-PERP",
+      "ZKP-USDT-PERP",
+      "PENGU-USDT-PERP",
+      "AAVE-USDT-PERP",
+      "ONDO-USDT-PERP",
+      "DEXE-USDT-PERP",
+      "XMR-USDT-PERP",
+      "CHIP-USDT-PERP",
+      "COTI-USDT-PERP",
+      "BTW-USDT-PERP",
+      "XPL-USDT-PERP",
+      "BNB-USDT-PERP",
+      "DASH-USDT-PERP",
+      "SKR-USDT-PERP",
+      "LTC-USDT-PERP",
+      "ICP-USDT-PERP",
+      "WLFI-USDT-PERP",
+      "INJ-USDT-PERP",
+      "XAUT-USDT-PERP",
+      "AVAX-USDT-PERP"
     ],
     "binance": [
       "BTC-USDT",
       "ETH-USDT",
       "SOL-USDT",
-      "XRP-USDT",
       "ZEC-USDT",
-      "TRUMP-USDT",
-      "ENA-USDT",
-      "BNB-USDT",
-      "DOGE-USDT",
       "BMT-USDT",
-      "XAUT-USDT",
-      "TRX-USDT",
-      "SUI-USDT",
-      "DEXE-USDT",
-      "PUMP-USDT",
-      "HEMI-USDT",
-      "PEPE-USDT",
-      "PAXG-USDT",
-      "TUT-USDT",
-      "U-USDT",
-      "LINK-USDT",
-      "WLD-USDT",
-      "TAO-USDT",
-      "ADA-USDT",
-      "UNI-USDT",
-      "NEAR-USDT",
-      "AAVE-USDT",
-      "CHIP-USDT",
-      "LTC-USDT",
-      "AVAX-USDT",
-      "HBAR-USDT",
-      "BCH-USDT",
+      "TRUMP-USDT",
+      "XRP-USDT",
+      "BNB-USDT",
       "ENSO-USDT",
-      "XLM-USDT",
-      "XPL-USDT",
-      "FET-USDT",
-      "ONDO-USDT",
-      "ONG-USDT",
-      "EDEN-USDT",
-      "ASTER-USDT",
-      "PENGU-USDT",
-      "MOVR-USDT",
-      "MANTRA-USDT",
-      "GRAM-USDT",
-      "HEI-USDT",
+      "PUMP-USDT",
+      "ENA-USDT",
+      "DOGE-USDT",
       "PROM-USDT",
-      "BICO-USDT",
+      "TUT-USDT",
+      "UNI-USDT",
+      "SUI-USDT",
+      "ONG-USDT",
+      "TRX-USDT",
+      "DEXE-USDT",
+      "NEAR-USDT",
+      "GIGGLE-USDT",
+      "LINK-USDT",
+      "U-USDT",
+      "DASH-USDT",
+      "PEPE-USDT",
+      "NIL-USDT",
+      "FET-USDT",
+      "HEMI-USDT",
+      "LTC-USDT",
+      "ADA-USDT",
+      "WLD-USDT",
+      "BANK-USDT",
+      "AAVE-USDT",
+      "COTI-USDT",
+      "ZKP-USDT",
+      "XAUT-USDT",
+      "TAO-USDT",
+      "ASTER-USDT",
+      "CHIP-USDT",
       "ZRO-USDT",
-      "WLFI-USDT",
-      "JTO-USDT"
+      "PENGU-USDT",
+      "POL-USDT",
+      "AVAX-USDT",
+      "ICP-USDT",
+      "XPL-USDT",
+      "GRAM-USDT",
+      "ONDO-USDT",
+      "OPG-USDT",
+      "ROBO-USDT",
+      "XLM-USDT"
     ]
   },
-  "run_started_at": "2026-08-29T03:17:04.352159+00:00",
-  "updated_at": "2026-08-29T03:19:53.301506+00:00",
-  "run_finished_at": "2026-08-29T03:19:53.301455+00:00"
+  "run_started_at": "2026-08-30T03:17:07.504184+00:00",
+  "updated_at": "2026-08-30T03:22:49.584513+00:00",
+  "run_finished_at": "2026-08-30T03:22:49.584460+00:00"
 }
