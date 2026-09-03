@@ -155,32 +155,6 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "ENSO-USDT": {
-    "symbol": "ENSO/USDT",
-    "id": "ENSOUSDT",
-    "type": "spot",
-    "base": "ENSO",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
   "BNB-USDT": {
     "symbol": "BNB/USDT",
     "id": "BNBUSDT",
@@ -199,84 +173,6 @@
       "amount": {
         "min": 0.001,
         "max": 900000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "ENA-USDT": {
-    "symbol": "ENA/USDT",
-    "id": "ENAUSDT",
-    "type": "spot",
-    "base": "ENA",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "U-USDT": {
-    "symbol": "U/USDT",
-    "id": "UUSDT",
-    "type": "spot",
-    "base": "U",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 10000000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "XAUT-USDT": {
-    "symbol": "XAUT/USDT",
-    "id": "XAUTUSDT",
-    "type": "spot",
-    "base": "XAUT",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.01,
-      "amount": 0.0001
-    },
-    "limits": {
-      "amount": {
-        "min": 0.0001,
-        "max": 9000.0
       },
       "cost": {
         "min": 5.0
@@ -306,58 +202,6 @@
       },
       "cost": {
         "min": 1.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "NEAR-USDT": {
-    "symbol": "NEAR/USDT",
-    "id": "NEARUSDT",
-    "type": "spot",
-    "base": "NEAR",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 900000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "TRX-USDT": {
-    "symbol": "TRX/USDT",
-    "id": "TRXUSDT",
-    "type": "spot",
-    "base": "TRX",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 9000000.0
-      },
-      "cost": {
-        "min": 5.0
       }
     },
     "taker": 0.001,
@@ -415,50 +259,24 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "PAXG-USDT": {
-    "symbol": "PAXG/USDT",
-    "id": "PAXGUSDT",
+  "ENA-USDT": {
+    "symbol": "ENA/USDT",
+    "id": "ENAUSDT",
     "type": "spot",
-    "base": "PAXG",
+    "base": "ENA",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 0.01,
-      "amount": 0.0001
-    },
-    "limits": {
-      "amount": {
-        "min": 0.0001,
-        "max": 9000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "LINK-USDT": {
-    "symbol": "LINK/USDT",
-    "id": "LINKUSDT",
-    "type": "spot",
-    "base": "LINK",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
+      "price": 0.0001,
       "amount": 0.01
     },
     "limits": {
       "amount": {
         "min": 0.01,
-        "max": 90000.0
+        "max": 92141578.0
       },
       "cost": {
         "min": 5.0
@@ -519,49 +337,23 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "FIL-USDT": {
-    "symbol": "FIL/USDT",
-    "id": "FILUSDT",
+  "BMT-USDT": {
+    "symbol": "BMT/USDT",
+    "id": "BMTUSDT",
     "type": "spot",
-    "base": "FIL",
+    "base": "BMT",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 0.0001,
-      "amount": 0.01
+      "price": 1e-05,
+      "amount": 0.1
     },
     "limits": {
       "amount": {
-        "min": 0.01,
-        "max": 9222449.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "PUMP-USDT": {
-    "symbol": "PUMP/USDT",
-    "id": "PUMPUSDT",
-    "type": "spot",
-    "base": "PUMP",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
+        "min": 0.1,
         "max": 913205152.0
       },
       "cost": {
@@ -571,50 +363,24 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "PEPE-USDT": {
-    "symbol": "PEPE/USDT",
-    "id": "PEPEUSDT",
+  "XAUT-USDT": {
+    "symbol": "XAUT/USDT",
+    "id": "XAUTUSDT",
     "type": "spot",
-    "base": "PEPE",
+    "base": "XAUT",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 1e-08,
-      "amount": 1.0
+      "price": 0.01,
+      "amount": 0.0001
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 92233720368.0
-      },
-      "cost": {
-        "min": 1.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "ACE-USDT": {
-    "symbol": "ACE/USDT",
-    "id": "ACEUSDT",
-    "type": "spot",
-    "base": "ACE",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 92141578.0
+        "min": 0.0001,
+        "max": 9000.0
       },
       "cost": {
         "min": 5.0
@@ -623,11 +389,115 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "ADA-USDT": {
-    "symbol": "ADA/USDT",
-    "id": "ADAUSDT",
+  "LINK-USDT": {
+    "symbol": "LINK/USDT",
+    "id": "LINKUSDT",
     "type": "spot",
-    "base": "ADA",
+    "base": "LINK",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 90000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "U-USDT": {
+    "symbol": "U/USDT",
+    "id": "UUSDT",
+    "type": "spot",
+    "base": "U",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.0001,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 10000000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "PAXG-USDT": {
+    "symbol": "PAXG/USDT",
+    "id": "PAXGUSDT",
+    "type": "spot",
+    "base": "PAXG",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.01,
+      "amount": 0.0001
+    },
+    "limits": {
+      "amount": {
+        "min": 0.0001,
+        "max": 9000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "NEAR-USDT": {
+    "symbol": "NEAR/USDT",
+    "id": "NEARUSDT",
+    "type": "spot",
+    "base": "NEAR",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 900000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "TRX-USDT": {
+    "symbol": "TRX/USDT",
+    "id": "TRXUSDT",
+    "type": "spot",
+    "base": "TRX",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -640,7 +510,7 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 900000.0
+        "max": 9000000.0
       },
       "cost": {
         "min": 5.0
@@ -675,11 +545,11 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "CRV-USDT": {
-    "symbol": "CRV/USDT",
-    "id": "CRVUSDT",
+  "ADA-USDT": {
+    "symbol": "ADA/USDT",
+    "id": "ADAUSDT",
     "type": "spot",
-    "base": "CRV",
+    "base": "ADA",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -692,7 +562,7 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 922327.0
+        "max": 900000.0
       },
       "cost": {
         "min": 5.0
@@ -701,11 +571,89 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "TUT-USDT": {
-    "symbol": "TUT/USDT",
-    "id": "TUTUSDT",
+  "PROM-USDT": {
+    "symbol": "PROM/USDT",
+    "id": "PROMUSDT",
     "type": "spot",
-    "base": "TUT",
+    "base": "PROM",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 90000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "PUMP-USDT": {
+    "symbol": "PUMP/USDT",
+    "id": "PUMPUSDT",
+    "type": "spot",
+    "base": "PUMP",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-06,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 913205152.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "FIL-USDT": {
+    "symbol": "FIL/USDT",
+    "id": "FILUSDT",
+    "type": "spot",
+    "base": "FIL",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.0001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 9222449.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "T-USDT": {
+    "symbol": "T/USDT",
+    "id": "TUSDT",
+    "type": "spot",
+    "base": "T",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -713,15 +661,15 @@
     "active": true,
     "precision": {
       "price": 1e-05,
-      "amount": 1.0
+      "amount": 0.1
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 8080000000.0
+        "min": 0.1,
+        "max": 92141578.0
       },
       "cost": {
-        "min": 1.0
+        "min": 5.0
       }
     },
     "taker": 0.001,
@@ -753,27 +701,27 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "ONG-USDT": {
-    "symbol": "ONG/USDT",
-    "id": "ONGUSDT",
+  "PEPE-USDT": {
+    "symbol": "PEPE/USDT",
+    "id": "PEPEUSDT",
     "type": "spot",
-    "base": "ONG",
+    "base": "PEPE",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 1e-05,
+      "price": 1e-08,
       "amount": 1.0
     },
     "limits": {
       "amount": {
         "min": 1.0,
-        "max": 900000.0
+        "max": 92233720368.0
       },
       "cost": {
-        "min": 5.0
+        "min": 1.0
       }
     },
     "taker": 0.001,
@@ -797,6 +745,110 @@
       "amount": {
         "min": 0.1,
         "max": 92141578.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "ASTER-USDT": {
+    "symbol": "ASTER/USDT",
+    "id": "ASTERUSDT",
+    "type": "spot",
+    "base": "ASTER",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 92141578.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "MUBARAK-USDT": {
+    "symbol": "MUBARAK/USDT",
+    "id": "MUBARAKUSDT",
+    "type": "spot",
+    "base": "MUBARAK",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 813000000.0
+      },
+      "cost": {
+        "min": 1.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "TUT-USDT": {
+    "symbol": "TUT/USDT",
+    "id": "TUTUSDT",
+    "type": "spot",
+    "base": "TUT",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 8080000000.0
+      },
+      "cost": {
+        "min": 1.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "AVAX-USDT": {
+    "symbol": "AVAX/USDT",
+    "id": "AVAXUSDT",
+    "type": "spot",
+    "base": "AVAX",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 90000.0
       },
       "cost": {
         "min": 5.0
@@ -831,89 +883,11 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "AVAX-USDT": {
-    "symbol": "AVAX/USDT",
-    "id": "AVAXUSDT",
+  "ACE-USDT": {
+    "symbol": "ACE/USDT",
+    "id": "ACEUSDT",
     "type": "spot",
-    "base": "AVAX",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 90000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "DASH-USDT": {
-    "symbol": "DASH/USDT",
-    "id": "DASHUSDT",
-    "type": "spot",
-    "base": "DASH",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.01,
-      "amount": 0.001
-    },
-    "limits": {
-      "amount": {
-        "min": 0.001,
-        "max": 90000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "XPL-USDT": {
-    "symbol": "XPL/USDT",
-    "id": "XPLUSDT",
-    "type": "spot",
-    "base": "XPL",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 1e-05,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 913205152.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "OP-USDT": {
-    "symbol": "OP/USDT",
-    "id": "OPUSDT",
-    "type": "spot",
-    "base": "OP",
+    "base": "ACE",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -921,116 +895,12 @@
     "active": true,
     "precision": {
       "price": 0.0001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "0G-USDT": {
-    "symbol": "0G/USDT",
-    "id": "0GUSDT",
-    "type": "spot",
-    "base": "0G",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "GRAM-USDT": {
-    "symbol": "GRAM/USDT",
-    "id": "GRAMUSDT",
-    "type": "spot",
-    "base": "GRAM",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "SC-USDT": {
-    "symbol": "SC/USDT",
-    "id": "SCUSDT",
-    "type": "spot",
-    "base": "SC",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 92141578.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "BMT-USDT": {
-    "symbol": "BMT/USDT",
-    "id": "BMTUSDT",
-    "type": "spot",
-    "base": "BMT",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 1e-05,
       "amount": 0.1
     },
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 913205152.0
+        "max": 92141578.0
       },
       "cost": {
         "min": 5.0
@@ -1065,11 +935,63 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "ONDO-USDT": {
-    "symbol": "ONDO/USDT",
-    "id": "ONDOUSDT",
+  "FF-USDT": {
+    "symbol": "FF/USDT",
+    "id": "FFUSDT",
     "type": "spot",
-    "base": "ONDO",
+    "base": "FF",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 913205152.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "ENSO-USDT": {
+    "symbol": "ENSO/USDT",
+    "id": "ENSOUSDT",
+    "type": "spot",
+    "base": "ENSO",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 92141578.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "CRV-USDT": {
+    "symbol": "CRV/USDT",
+    "id": "CRVUSDT",
+    "type": "spot",
+    "base": "CRV",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -1082,6 +1004,58 @@
     "limits": {
       "amount": {
         "min": 0.1,
+        "max": 922327.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "CHIP-USDT": {
+    "symbol": "CHIP/USDT",
+    "id": "CHIPUSDT",
+    "type": "spot",
+    "base": "CHIP",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 913205152.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "ROBO-USDT": {
+    "symbol": "ROBO/USDT",
+    "id": "ROBOUSDT",
+    "type": "spot",
+    "base": "ROBO",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
         "max": 913205152.0
       },
       "cost": {
@@ -1117,24 +1091,24 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "CHIP-USDT": {
-    "symbol": "CHIP/USDT",
-    "id": "CHIPUSDT",
+  "ICP-USDT": {
+    "symbol": "ICP/USDT",
+    "id": "ICPUSDT",
     "type": "spot",
-    "base": "CHIP",
+    "base": "ICP",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 1e-05,
-      "amount": 1.0
+      "price": 0.001,
+      "amount": 0.01
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 913205152.0
+        "min": 0.01,
+        "max": 922327.0
       },
       "cost": {
         "min": 5.0
@@ -1143,11 +1117,11 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "FF-USDT": {
-    "symbol": "FF/USDT",
-    "id": "FFUSDT",
+  "XPL-USDT": {
+    "symbol": "XPL/USDT",
+    "id": "XPLUSDT",
     "type": "spot",
-    "base": "FF",
+    "base": "XPL",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -1169,23 +1143,23 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "PROM-USDT": {
-    "symbol": "PROM/USDT",
-    "id": "PROMUSDT",
+  "DASH-USDT": {
+    "symbol": "DASH/USDT",
+    "id": "DASHUSDT",
     "type": "spot",
-    "base": "PROM",
+    "base": "DASH",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 0.001,
-      "amount": 0.01
+      "price": 0.01,
+      "amount": 0.001
     },
     "limits": {
       "amount": {
-        "min": 0.01,
+        "min": 0.001,
         "max": 90000.0
       },
       "cost": {
@@ -1195,11 +1169,11 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "ASTER-USDT": {
-    "symbol": "ASTER/USDT",
-    "id": "ASTERUSDT",
+  "EGLD-USDT": {
+    "symbol": "EGLD/USDT",
+    "id": "EGLDUSDT",
     "type": "spot",
-    "base": "ASTER",
+    "base": "EGLD",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -1212,7 +1186,7 @@
     "limits": {
       "amount": {
         "min": 0.01,
-        "max": 92141578.0
+        "max": 900000.0
       },
       "cost": {
         "min": 5.0
@@ -1221,37 +1195,11 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "INJ-USDT": {
-    "symbol": "INJ/USDT",
-    "id": "INJUSDT",
+  "ONDO-USDT": {
+    "symbol": "ONDO/USDT",
+    "id": "ONDOUSDT",
     "type": "spot",
-    "base": "INJ",
-    "quote": "USDT",
-    "settle": null,
-    "linear": null,
-    "contractSize": null,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 90000.0
-      },
-      "cost": {
-        "min": 5.0
-      }
-    },
-    "taker": 0.001,
-    "maker": 0.001
-  },
-  "FET-USDT": {
-    "symbol": "FET/USDT",
-    "id": "FETUSDT",
-    "type": "spot",
-    "base": "FET",
+    "base": "ONDO",
     "quote": "USDT",
     "settle": null,
     "linear": null,
@@ -1264,7 +1212,7 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 9000000.0
+        "max": 913205152.0
       },
       "cost": {
         "min": 5.0
@@ -1273,24 +1221,76 @@
     "taker": 0.001,
     "maker": 0.001
   },
-  "BCH-USDT": {
-    "symbol": "BCH/USDT",
-    "id": "BCHUSDT",
+  "LA-USDT": {
+    "symbol": "LA/USDT",
+    "id": "LAUSDT",
     "type": "spot",
-    "base": "BCH",
+    "base": "LA",
     "quote": "USDT",
     "settle": null,
     "linear": null,
     "contractSize": null,
     "active": true,
     "precision": {
-      "price": 0.1,
-      "amount": 0.001
+      "price": 0.0001,
+      "amount": 0.1
     },
     "limits": {
       "amount": {
-        "min": 0.001,
+        "min": 0.1,
+        "max": 92141578.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "DOT-USDT": {
+    "symbol": "DOT/USDT",
+    "id": "DOTUSDT",
+    "type": "spot",
+    "base": "DOT",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
         "max": 90000.0
+      },
+      "cost": {
+        "min": 5.0
+      }
+    },
+    "taker": 0.001,
+    "maker": 0.001
+  },
+  "PYTH-USDT": {
+    "symbol": "PYTH/USDT",
+    "id": "PYTHUSDT",
+    "type": "spot",
+    "base": "PYTH",
+    "quote": "USDT",
+    "settle": null,
+    "linear": null,
+    "contractSize": null,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 92141578.0
       },
       "cost": {
         "min": 5.0
