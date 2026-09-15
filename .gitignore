@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+# full market dumps stay local-only (can be tens of MB)
+meta/*.full.json
+# run logs
+nohup.log
+dump_full.out
+cron.log
+full_run_start.txt
+# cron lock
+.cron.lock
+funding_carry.out
+funding_universe.out
+spread.log
+spread_report.log
