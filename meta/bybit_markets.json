@@ -51,32 +51,6 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "XRP-USDT-PERP": {
-    "symbol": "XRP/USDT:USDT",
-    "id": "XRPUSDT",
-    "type": "swap",
-    "base": "XRP",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 7500000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
   "SOL-USDT-PERP": {
     "symbol": "SOL/USDT:USDT",
     "id": "SOLUSDT",
@@ -95,6 +69,32 @@
       "amount": {
         "min": 0.1,
         "max": 96000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "XRP-USDT-PERP": {
+    "symbol": "XRP/USDT:USDT",
+    "id": "XRPUSDT",
+    "type": "swap",
+    "base": "XRP",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.0001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 7500000.0
       },
       "cost": {
         "min": null
@@ -155,32 +155,6 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "DOGE-USDT-PERP": {
-    "symbol": "DOGE/USDT:USDT",
-    "id": "DOGEUSDT",
-    "type": "swap",
-    "base": "DOGE",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-05,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 43678900.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
   "HYPE-USDT-PERP": {
     "symbol": "HYPE/USDT:USDT",
     "id": "HYPEUSDT",
@@ -207,63 +181,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "BCH-USDT-PERP": {
-    "symbol": "BCH/USDT:USDT",
-    "id": "BCHUSDT",
+  "ONDO-USDT-PERP": {
+    "symbol": "ONDO/USDT:USDT",
+    "id": "ONDOUSDT",
     "type": "swap",
-    "base": "BCH",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.1,
-      "amount": 0.01
-    },
-    "limits": {
-      "amount": {
-        "min": 0.01,
-        "max": 6500.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "1000PEPE-USDT-PERP": {
-    "symbol": "1000PEPE/USDT:USDT",
-    "id": "1000PEPEUSDT",
-    "type": "swap",
-    "base": "1000PEPE",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 100.0
-    },
-    "limits": {
-      "amount": {
-        "min": 100.0,
-        "max": 110000000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "SUI-USDT-PERP": {
-    "symbol": "SUI/USDT:USDT",
-    "id": "SUIUSDT",
-    "type": "swap",
-    "base": "SUI",
+    "base": "ONDO",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -271,12 +193,12 @@
     "active": true,
     "precision": {
       "price": 0.0001,
-      "amount": 10.0
+      "amount": 1.0
     },
     "limits": {
       "amount": {
-        "min": 10.0,
-        "max": 330000.0
+        "min": 1.0,
+        "max": 4500000.0
       },
       "cost": {
         "min": null
@@ -285,24 +207,50 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "UNI-USDT-PERP": {
-    "symbol": "UNI/USDT:USDT",
-    "id": "UNIUSDT",
+  "LTC-USDT-PERP": {
+    "symbol": "LTC/USDT:USDT",
+    "id": "LTCUSDT",
     "type": "swap",
-    "base": "UNI",
+    "base": "LTC",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 0.001,
+      "price": 0.01,
       "amount": 0.1
     },
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 32000.0
+        "max": 8800.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "DOGE-USDT-PERP": {
+    "symbol": "DOGE/USDT:USDT",
+    "id": "DOGEUSDT",
+    "type": "swap",
+    "base": "DOGE",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 43678900.0
       },
       "cost": {
         "min": null
@@ -337,11 +285,63 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "ARB-USDT-PERP": {
-    "symbol": "ARB/USDT:USDT",
-    "id": "ARBUSDT",
+  "SUI-USDT-PERP": {
+    "symbol": "SUI/USDT:USDT",
+    "id": "SUIUSDT",
     "type": "swap",
-    "base": "ARB",
+    "base": "SUI",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.0001,
+      "amount": 10.0
+    },
+    "limits": {
+      "amount": {
+        "min": 10.0,
+        "max": 330000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "1000PEPE-USDT-PERP": {
+    "symbol": "1000PEPE/USDT:USDT",
+    "id": "1000PEPEUSDT",
+    "type": "swap",
+    "base": "1000PEPE",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-06,
+      "amount": 100.0
+    },
+    "limits": {
+      "amount": {
+        "min": 100.0,
+        "max": 110000000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "LSK-USDT-PERP": {
+    "symbol": "LSK/USDT:USDT",
+    "id": "LSKUSDT",
+    "type": "swap",
+    "base": "LSK",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -354,7 +354,7 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 21500000.0
+        "max": 200000.0
       },
       "cost": {
         "min": null
@@ -389,24 +389,76 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "LTC-USDT-PERP": {
-    "symbol": "LTC/USDT:USDT",
-    "id": "LTCUSDT",
+  "XPL-USDT-PERP": {
+    "symbol": "XPL/USDT:USDT",
+    "id": "XPLUSDT",
     "type": "swap",
-    "base": "LTC",
+    "base": "XPL",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 0.01,
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 3500000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "NIL-USDT-PERP": {
+    "symbol": "NIL/USDT:USDT",
+    "id": "NILUSDT",
+    "type": "swap",
+    "base": "NIL",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 1550000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "UNI-USDT-PERP": {
+    "symbol": "UNI/USDT:USDT",
+    "id": "UNIUSDT",
+    "type": "swap",
+    "base": "UNI",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.001,
       "amount": 0.1
     },
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 8800.0
+        "max": 32000.0
       },
       "cost": {
         "min": null
@@ -467,6 +519,32 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
+  "LINK-USDT-PERP": {
+    "symbol": "LINK/USDT:USDT",
+    "id": "LINKUSDT",
+    "type": "swap",
+    "base": "LINK",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 41000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
   "WLD-USDT-PERP": {
     "symbol": "WLD/USDT:USDT",
     "id": "WLDUSDT",
@@ -485,84 +563,6 @@
       "amount": {
         "min": 0.1,
         "max": 1850000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "ONDO-USDT-PERP": {
-    "symbol": "ONDO/USDT:USDT",
-    "id": "ONDOUSDT",
-    "type": "swap",
-    "base": "ONDO",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 4500000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "MUBARAK-USDT-PERP": {
-    "symbol": "MUBARAK/USDT:USDT",
-    "id": "MUBARAKUSDT",
-    "type": "swap",
-    "base": "MUBARAK",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 2300000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "PENGU-USDT-PERP": {
-    "symbol": "PENGU/USDT:USDT",
-    "id": "PENGUUSDT",
-    "type": "swap",
-    "base": "PENGU",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 10.0
-    },
-    "limits": {
-      "amount": {
-        "min": 10.0,
-        "max": 60000000.0
       },
       "cost": {
         "min": null
@@ -597,63 +597,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "ZRO-USDT-PERP": {
-    "symbol": "ZRO/USDT:USDT",
-    "id": "ZROUSDT",
+  "ARB-USDT-PERP": {
+    "symbol": "ARB/USDT:USDT",
+    "id": "ARBUSDT",
     "type": "swap",
-    "base": "ZRO",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 210000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "TRUMP-USDT-PERP": {
-    "symbol": "TRUMP/USDT:USDT",
-    "id": "TRUMPUSDT",
-    "type": "swap",
-    "base": "TRUMP",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 40000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "NIL-USDT-PERP": {
-    "symbol": "NIL/USDT:USDT",
-    "id": "NILUSDT",
-    "type": "swap",
-    "base": "NIL",
+    "base": "ARB",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -661,12 +609,64 @@
     "active": true,
     "precision": {
       "price": 1e-05,
-      "amount": 1.0
+      "amount": 0.1
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 1550000.0
+        "min": 0.1,
+        "max": 21500000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "BCH-USDT-PERP": {
+    "symbol": "BCH/USDT:USDT",
+    "id": "BCHUSDT",
+    "type": "swap",
+    "base": "BCH",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.1,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 6500.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "SAGA-USDT-PERP": {
+    "symbol": "SAGA/USDT:USDT",
+    "id": "SAGAUSDT",
+    "type": "swap",
+    "base": "SAGA",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-06,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 1250000.0
       },
       "cost": {
         "min": null
@@ -701,11 +701,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "LINK-USDT-PERP": {
-    "symbol": "LINK/USDT:USDT",
-    "id": "LINKUSDT",
+  "LIT-USDT-PERP": {
+    "symbol": "LIT/USDT:USDT",
+    "id": "LITUSDT",
     "type": "swap",
-    "base": "LINK",
+    "base": "LIT",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -718,7 +718,33 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 41000.0
+        "max": 200000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "XLM-USDT-PERP": {
+    "symbol": "XLM/USDT:USDT",
+    "id": "XLMUSDT",
+    "type": "swap",
+    "base": "XLM",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.0001,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 730000.0
       },
       "cost": {
         "min": null
@@ -753,11 +779,37 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "LIT-USDT-PERP": {
-    "symbol": "LIT/USDT:USDT",
-    "id": "LITUSDT",
+  "BTW-USDT-PERP": {
+    "symbol": "BTW/USDT:USDT",
+    "id": "BTWUSDT",
     "type": "swap",
-    "base": "LIT",
+    "base": "BTW",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
+      "amount": 10.0
+    },
+    "limits": {
+      "amount": {
+        "min": 10.0,
+        "max": 3005000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "TRUMP-USDT-PERP": {
+    "symbol": "TRUMP/USDT:USDT",
+    "id": "TRUMPUSDT",
+    "type": "swap",
+    "base": "TRUMP",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -770,7 +822,7 @@
     "limits": {
       "amount": {
         "min": 0.1,
-        "max": 200000.0
+        "max": 40000.0
       },
       "cost": {
         "min": null
@@ -779,24 +831,24 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "XPL-USDT-PERP": {
-    "symbol": "XPL/USDT:USDT",
-    "id": "XPLUSDT",
+  "PENGU-USDT-PERP": {
+    "symbol": "PENGU/USDT:USDT",
+    "id": "PENGUUSDT",
     "type": "swap",
-    "base": "XPL",
+    "base": "PENGU",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 1e-05,
-      "amount": 1.0
+      "price": 1e-06,
+      "amount": 10.0
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 3500000.0
+        "min": 10.0,
+        "max": 60000000.0
       },
       "cost": {
         "min": null
@@ -805,11 +857,63 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "XLM-USDT-PERP": {
-    "symbol": "XLM/USDT:USDT",
-    "id": "XLMUSDT",
+  "XMR-USDT-PERP": {
+    "symbol": "XMR/USDT:USDT",
+    "id": "XMRUSDT",
     "type": "swap",
-    "base": "XLM",
+    "base": "XMR",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.01,
+      "amount": 0.01
+    },
+    "limits": {
+      "amount": {
+        "min": 0.01,
+        "max": 1920.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "BROCCOLI-USDT-PERP": {
+    "symbol": "BROCCOLI/USDT:USDT",
+    "id": "BROCCOLIUSDT",
+    "type": "swap",
+    "base": "BROCCOLI",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-06,
+      "amount": 1.0
+    },
+    "limits": {
+      "amount": {
+        "min": 1.0,
+        "max": 6500000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "ZRO-USDT-PERP": {
+    "symbol": "ZRO/USDT:USDT",
+    "id": "ZROUSDT",
+    "type": "swap",
+    "base": "ZRO",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -817,12 +921,90 @@
     "active": true,
     "precision": {
       "price": 0.0001,
-      "amount": 1.0
+      "amount": 0.1
     },
     "limits": {
       "amount": {
-        "min": 1.0,
-        "max": 730000.0
+        "min": 0.1,
+        "max": 210000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "INJ-USDT-PERP": {
+    "symbol": "INJ/USDT:USDT",
+    "id": "INJUSDT",
+    "type": "swap",
+    "base": "INJ",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 60140.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "ETC-USDT-PERP": {
+    "symbol": "ETC/USDT:USDT",
+    "id": "ETCUSDT",
+    "type": "swap",
+    "base": "ETC",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 10000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "XAUT-USDT-PERP": {
+    "symbol": "XAUT/USDT:USDT",
+    "id": "XAUTUSDT",
+    "type": "swap",
+    "base": "XAUT",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 0.1,
+      "amount": 0.001
+    },
+    "limits": {
+      "amount": {
+        "min": 0.001,
+        "max": 525.0
       },
       "cost": {
         "min": null
@@ -883,37 +1065,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "1000BONK-USDT-PERP": {
-    "symbol": "1000BONK/USDT:USDT",
-    "id": "1000BONKUSDT",
+  "FLOCK-USDT-PERP": {
+    "symbol": "FLOCK/USDT:USDT",
+    "id": "FLOCKUSDT",
     "type": "swap",
-    "base": "1000BONK",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-06,
-      "amount": 100.0
-    },
-    "limits": {
-      "amount": {
-        "min": 100.0,
-        "max": 60000000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "FARTCOIN-USDT-PERP": {
-    "symbol": "FARTCOIN/USDT:USDT",
-    "id": "FARTCOINUSDT",
-    "type": "swap",
-    "base": "FARTCOIN",
+    "base": "FLOCK",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -926,7 +1082,7 @@
     "limits": {
       "amount": {
         "min": 1.0,
-        "max": 3000000.0
+        "max": 1100000.0
       },
       "cost": {
         "min": null
@@ -935,50 +1091,24 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "INJ-USDT-PERP": {
-    "symbol": "INJ/USDT:USDT",
-    "id": "INJUSDT",
+  "NOM-USDT-PERP": {
+    "symbol": "NOM/USDT:USDT",
+    "id": "NOMUSDT",
     "type": "swap",
-    "base": "INJ",
+    "base": "NOM",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 0.001,
-      "amount": 0.1
+      "price": 1e-06,
+      "amount": 10.0
     },
     "limits": {
       "amount": {
-        "min": 0.1,
-        "max": 60140.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "PONS-USDT-PERP": {
-    "symbol": "PONS/USDT:USDT",
-    "id": "PONSUSDT",
-    "type": "swap",
-    "base": "PONS",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 1.0
-    },
-    "limits": {
-      "amount": {
-        "min": 1.0,
-        "max": 305680.0
+        "min": 10.0,
+        "max": 15000000.0
       },
       "cost": {
         "min": null
@@ -1013,24 +1143,24 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "BTW-USDT-PERP": {
-    "symbol": "BTW/USDT:USDT",
-    "id": "BTWUSDT",
+  "XAI-USDT-PERP": {
+    "symbol": "XAI/USDT:USDT",
+    "id": "XAIUSDT",
     "type": "swap",
-    "base": "BTW",
+    "base": "XAI",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 1e-05,
-      "amount": 10.0
+      "price": 1e-06,
+      "amount": 1.0
     },
     "limits": {
       "amount": {
-        "min": 10.0,
-        "max": 3005000.0
+        "min": 1.0,
+        "max": 6500000.0
       },
       "cost": {
         "min": null
@@ -1039,37 +1169,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "XAUT-USDT-PERP": {
-    "symbol": "XAUT/USDT:USDT",
-    "id": "XAUTUSDT",
+  "PONS-USDT-PERP": {
+    "symbol": "PONS/USDT:USDT",
+    "id": "PONSUSDT",
     "type": "swap",
-    "base": "XAUT",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.1,
-      "amount": 0.001
-    },
-    "limits": {
-      "amount": {
-        "min": 0.001,
-        "max": 525.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "WIF-USDT-PERP": {
-    "symbol": "WIF/USDT:USDT",
-    "id": "WIFUSDT",
-    "type": "swap",
-    "base": "WIF",
+    "base": "PONS",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -1082,7 +1186,7 @@
     "limits": {
       "amount": {
         "min": 1.0,
-        "max": 1500000.0
+        "max": 305680.0
       },
       "cost": {
         "min": null
@@ -1091,24 +1195,24 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "XMR-USDT-PERP": {
-    "symbol": "XMR/USDT:USDT",
-    "id": "XMRUSDT",
+  "VVV-USDT-PERP": {
+    "symbol": "VVV/USDT:USDT",
+    "id": "VVVUSDT",
     "type": "swap",
-    "base": "XMR",
+    "base": "VVV",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
     "contractSize": 1.0,
     "active": true,
     "precision": {
-      "price": 0.01,
+      "price": 0.001,
       "amount": 0.01
     },
     "limits": {
       "amount": {
         "min": 0.01,
-        "max": 1920.0
+        "max": 50000.0
       },
       "cost": {
         "min": null
@@ -1143,63 +1247,11 @@
     "taker": 0.0006,
     "maker": 0.0001
   },
-  "LSK-USDT-PERP": {
-    "symbol": "LSK/USDT:USDT",
-    "id": "LSKUSDT",
+  "MNT-USDT-PERP": {
+    "symbol": "MNT/USDT:USDT",
+    "id": "MNTUSDT",
     "type": "swap",
-    "base": "LSK",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-05,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 200000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "MARSCOIN-USDT-PERP": {
-    "symbol": "MARSCOIN/USDT:USDT",
-    "id": "MARSCOINUSDT",
-    "type": "swap",
-    "base": "MARSCOIN",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 1e-05,
-      "amount": 10.0
-    },
-    "limits": {
-      "amount": {
-        "min": 10.0,
-        "max": 1348000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "VIRTUAL-USDT-PERP": {
-    "symbol": "VIRTUAL/USDT:USDT",
-    "id": "VIRTUALUSDT",
-    "type": "swap",
-    "base": "VIRTUAL",
+    "base": "MNT",
     "quote": "USDT",
     "settle": "USDT",
     "linear": true,
@@ -1207,90 +1259,38 @@
     "active": true,
     "precision": {
       "price": 0.0001,
+      "amount": 0.1
+    },
+    "limits": {
+      "amount": {
+        "min": 0.1,
+        "max": 250000.0
+      },
+      "cost": {
+        "min": null
+      }
+    },
+    "taker": 0.0006,
+    "maker": 0.0001
+  },
+  "HBAR-USDT-PERP": {
+    "symbol": "HBAR/USDT:USDT",
+    "id": "HBARUSDT",
+    "type": "swap",
+    "base": "HBAR",
+    "quote": "USDT",
+    "settle": "USDT",
+    "linear": true,
+    "contractSize": 1.0,
+    "active": true,
+    "precision": {
+      "price": 1e-05,
       "amount": 1.0
     },
     "limits": {
       "amount": {
         "min": 1.0,
-        "max": 1000000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "ICP-USDT-PERP": {
-    "symbol": "ICP/USDT:USDT",
-    "id": "ICPUSDT",
-    "type": "swap",
-    "base": "ICP",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 100510.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "MET-USDT-PERP": {
-    "symbol": "MET/USDT:USDT",
-    "id": "METUSDT",
-    "type": "swap",
-    "base": "MET",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 1000000.0
-      },
-      "cost": {
-        "min": null
-      }
-    },
-    "taker": 0.0006,
-    "maker": 0.0001
-  },
-  "TIA-USDT-PERP": {
-    "symbol": "TIA/USDT:USDT",
-    "id": "TIAUSDT",
-    "type": "swap",
-    "base": "TIA",
-    "quote": "USDT",
-    "settle": "USDT",
-    "linear": true,
-    "contractSize": 1.0,
-    "active": true,
-    "precision": {
-      "price": 0.0001,
-      "amount": 0.1
-    },
-    "limits": {
-      "amount": {
-        "min": 0.1,
-        "max": 1000000.0
+        "max": 7416400.0
       },
       "cost": {
         "min": null
