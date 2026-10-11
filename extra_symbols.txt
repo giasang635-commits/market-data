@@ -1,0 +1,25 @@
+# Forced-include symbols, added on top of the top-50 selection each run.
+# Format: exchange:SPEC   (SPEC = ccxt symbol | market id | base ticker)
+# Lines starting with # and blank lines are ignored.
+#
+# --- pinned core (always updated even if it drifts out of top-50) ---
+bybit:BTC
+bybit:ETH
+bybit:SOL
+bybit:XRP
+bybit:BNB
+bybit:DOGE
+bybit:ADA
+bybit:LINK
+bybit:AVAX
+bybit:LTC
+binance:BTC
+binance:ETH
+binance:SOL
+binance:XRP
+binance:BNB
+binance:DOGE
+binance:ADA
+binance:LINK
+binance:AVAX
+binance:LTC
